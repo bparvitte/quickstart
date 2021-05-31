@@ -1,7 +1,7 @@
 ---
 title: "My Second Post"
 date: 2021-05-31T15:30:26+02:00
-draft: true
+draft: False
 ---
 
 Step 4: Add Some Content 
