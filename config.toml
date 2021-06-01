@@ -1,4 +1,4 @@
 baseURL = "https://bparvitte.github.io/quickstart/"
-languageCode = "en-us"
+languageCode = "fr-fr"
 title = "Mon test Hugo"
 theme = "ananke"
