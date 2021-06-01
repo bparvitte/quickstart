@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://bparvitte.github.io/quickstart/"
 languageCode = "en-us"
 title = "Mon test Hugo"
 theme = "ananke"
