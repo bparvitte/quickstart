@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mathjax on Mon test Hugo</title><link>https://bparvitte.github.io/quickstart/tags/mathjax/</link><description>Recent content in mathjax on Mon test Hugo</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><atom:link href="https://bparvitte.github.io/quickstart/tags/mathjax/index.xml" rel="self" type="application/rss+xml"/><item><title>Indented equations block</title><link>https://bparvitte.github.io/quickstart/posts/indented-equations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bparvitte.github.io/quickstart/posts/indented-equations/</guid><description>No indentation \begin{equation} \label{eq:1} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
+With indentation ox-hugo Issue #128
+\begin{equation} \label{eq:2} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
+Above equation (LaTeXenvironment) is the same as the first one, but:
+It is indented in the Org source.
+This test verifies that the indentation is auto-removed in the exported Markdown file.
+It has a different label (\label{eq:2} instead of \label{eq:1}); Mathjax requires the equation labels to be unique.</description></item></channel></rss>
