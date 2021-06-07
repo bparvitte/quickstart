@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>equations on Mon test Hugo</title><link>https://bparvitte.github.io/quickstart/tags/equations/</link><description>Recent content in equations on Mon test Hugo</description><generator>Hugo -- gohugo.io</generator><language>fr-fr</language><lastBuildDate>Mon, 31 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://bparvitte.github.io/quickstart/tags/equations/index.xml" rel="self" type="application/rss+xml"/><item><title>Inline equations</title><link>https://bparvitte.github.io/quickstart/posts/equation-latex-frag/</link><pubDate>Mon, 31 Jul 2017 00:00:00 +0000</pubDate><guid>https://bparvitte.github.io/quickstart/posts/equation-latex-frag/</guid><description>Inline equations are wrapped between \( and \). $ wrapping also works, but it is not preferred as it comes with restrictions like &amp;ldquo;there should be no whitespace between the equation and the $ delimiters&amp;rdquo;.
 So $ a=b $ will not work (it will look like: $ a=b $), but $a=b$ will work (it will look like: \(a=b\)).
-On the other hand, both \(a=b\) (it will look like: \(a=b\)) and \( a=b \) (it will look like: \( a=b \)) will work.</description></item><item><title>Indented equations block</title><link>https://bparvitte.github.io/quickstart/posts/indented-equations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bparvitte.github.io/quickstart/posts/indented-equations/</guid><description>No indentation \begin{equation} \label{eq:1} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
-With indentation ox-hugo Issue #128
+On the other hand, both \(a=b\) (it will look like: \(a=b\)) and \( a=b \) (it will look like: \( a=b \)) will work.</description></item><item><title>Blackfriday-specific escaping in equations</title><link>https://bparvitte.github.io/quickstart/posts/equations-bf-escaping/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bparvitte.github.io/quickstart/posts/equations-bf-escaping/</guid><description>ox-hugo Issue #138
+\| → \\| # \[ C(w,b) = \frac{1}{2n} \sum_x{{\|y(x)-a\|}^2} \]
+\\ at EOL → \\\\\\ # \begin{align} a^1 &amp;amp;= x \\\
+a^2 &amp;amp;= σ(W^2a^1 + b^2) \\\
+a^3 &amp;amp;= σ(W^3a^2 + b^3) \\\
+⋯ \\\
+a^L &amp;amp;= σ(W^La^{L-1} + b^L) \\\
+y &amp;amp;= a^L \end{align}
+Same as above, but without space before the \\ at EOL # \begin{align} a^1 &amp;amp;= x\\\
+a^2 &amp;amp;= σ(W^2a^1 + b^2)\\\</description></item><item><title>Equations with (r), (c), ..</title><link>https://bparvitte.github.io/quickstart/posts/equations-with-r-c/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bparvitte.github.io/quickstart/posts/equations-with-r-c/</guid><description>ox-hugo Issue #104
+Below, (r) or (R) should not get converted to ®, (c) or (C) should not get converted to ©, and (tm) or (TM) should not get converted to ™:
+\(( r)\) \(( R)\) \(( c)\) \(( C)\) \(( tm)\) \(( TM)\) \( ( r) \) \( ( R) \) \( ( c) \) \( ( C) \) \( ( tm) \) \( ( TM) \) Same as above but in Block Math equations:</description></item><item><title>Indented equations block</title><link>https://bparvitte.github.io/quickstart/posts/indented-equations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bparvitte.github.io/quickstart/posts/indented-equations/</guid><description>No indentation # \begin{equation} \label{eq:1} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
+With indentation # ox-hugo Issue #128
 \begin{equation} \label{eq:2} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
-Above equation (LaTeXenvironment) is the same as the first one, but:
+Above equation (LaTeX environment) is the same as the first one, but:
 It is indented in the Org source.
 This test verifies that the indentation is auto-removed in the exported Markdown file.
 It has a different label (\label{eq:2} instead of \label{eq:1}); Mathjax requires the equation labels to be unique.</description></item></channel></rss>
