@@ -1,0 +1,580 @@
+#+hugo_base_dir: ../
+
+#+seq_todo: TODO DRAFT DONE
+#+seq_todo: TEST__TODO | TEST__DONE
+
+#+property: header-args :eval never-export
+
+#+startup: indent
+
+#+macro: doc [[https://ox-hugo.scripter.co/doc/$1][$2]]
+#+macro: oxhugoissue =ox-hugo= Issue #[[https://github.com/kaushalmodi/ox-hugo/issues/$1][$1]]
+#+macro: hugoissue =hugo= Issue #[[https://github.com/gohugoio/hugo/issues/$1][$1]]
+#+macro: hugopr =hugo= PR #[[https://github.com/gohugoio/hugo/pull/$1][$1]]
+#+macro: bfissue /Blackfriday/ Issue #[[https://github.com/russross/blackfriday/issues/$1][$1]]
+#+macro: commit commit [[https://github.com/kaushalmodi/ox-hugo/commit/$1][$1]]
+
+# https://scripter.co/latex-in-html/
+#+macro: latex @@html:<span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>@@
+#+macro: youtube @@html:<div class="org-youtube"><iframe src="https://www.youtube-nocookie.com/embed/$1" allowfullscreen title="YouTube Video"></iframe></div>@@
+
+#+author:
+
+* Preparation
+:PROPERTIES:
+:EXPORT_FILE_NAME: prep
+:EXPORT_DATE: 2021-06-01-08T17:05:38-04:00
+:END:
+1. Be the root directory for this Hugo site (the directory containing
+   =config.toml=).
+2. Run
+  #+begin_example
+  hugo server --port 1111
+  #+end_example
+3. See the site served on "http://localhost:1111/".
+* Index
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: index
+:EXPORT_DATE: <2021-06-03 Jeu>
+:END:
+Export this *first* post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
+* Index2
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: _index
+:EXPORT_DATE: <2021-06-02 Mer>
+:END:
+Export this *first* post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
+
+* Post 1
+:PROPERTIES:
+:EXPORT_FILE_NAME: post-1
+:EXPORT_DATE: 2017-07-12T17:31:56-04:00
+:EXPORT_HUGO_SECTION: /posts/
+:END:
+Export this *first* post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
+* Post 2
+:PROPERTIES:
+:EXPORT_FILE_NAME: post-2
+:EXPORT_DATE: 2020-07-12T17:31:56-04:00
+:EXPORT_HUGO_SECTION: /posts/
+:END:
+
+
+$$\int_0^\pi \exp \left( -x^{2} \right)dx $$
+Export this *first* post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
+
+* About
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: about
+:END:
+This post has no date.
+
+Export this *second* post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
+* Image / Figure                                                      :image:
+** Image links
+:PROPERTIES:
+:EXPORT_FILE_NAME: image-links
+:EXPORT_DATE: 2017-07-15T07:49:44-04:00
+:END:
+This is some text before the first heading of this post.
+*** Unclickable image (works!)
+org-mode-unicorn-logo.png
+#+begin_src org
+# Org source
+,#+name: fig__unclickable_image
+,#+caption: Don't click this image -- It's not a hyperlink
+[[/static/images/org-mode-unicorn-logo.png]]
+#+end_src
+
+#+name: fig__unclickable_image
+#+caption: Don't click this image -- It's not a hyperlink
+[[file:~/ssds/Projets/Hugo/quickstart/static/images/OpticalCorrelationSpectroscopy4.png]]
+-----
++To be fixed+ (*Now fixed*): The sub-headings in a post get exported as /Heading 1/
+ instead of /Heading 2/.
+
+For example, this sub-section's heading is exported as:
+#+begin_example
+# Unclickable image
+#+end_example
+instead of
+#+begin_example
+## Unclickable image
+#+end_example
+
+-----
+*Solution*: Above is fixed by setting =HUGO_OFFSET_LEVEL= to 1.
+
+So the sub-heading title and the post title both get the /Heading 1/
+tag and look the same size.
+*** Clickable link that opens the image (works!)
+[[/images/org-mode-unicorn-logo.png][Click here to see the unicorn]]
+
+Do *not* use ~file:~ prefix in the Description if you want the image
+link to show up as-is i.e. not be replaced by the image-at-link like
+in [[fig__clickable_image_that_opens_the_image]]:
+
+#+begin_src org
+# Org source
+[[/images/org-mode-unicorn-logo.png][/images/org-mode-unicorn-logo.png]]
+#+end_src
+
+[[/images/org-mode-unicorn-logo.png][/images/org-mode-unicorn-logo.png]]
+
+*** Clickable image that opens the image (works!)
+Click below image to jump to the unicorn image.
+
+#+begin_src org
+# Org source
+#+name: fig__clickable_image_that_opens_the_image
+#+caption: Click this image -- It's a hyperlink
+[[/images/org-mode-unicorn-logo.png][file:../files-to-be-copied-to-static/static/images/unicorn-logo-small.png]]
+#+end_src
+
+#+name: fig__clickable_image_that_opens_the_image
+#+caption: Click this image -- It's a hyperlink
+[[/images/org-mode-unicorn-logo.png][file:../files-to-be-copied-to-static/static/images/unicorn-logo-small.png]]
+
+- NOTE :: =file:= has to be used in the *Description component* of the
+          Org link.
+**** Similar link with =#+name= specified
+Here's a similar link with =#+name= specified.. which should also be
+clickable.
+
+#+name: fig__unicorn
+[[/images/org-mode-unicorn-logo.png][file:/images/org-mode-unicorn-logo.png]]
+**** Same link with =file:= in "link" portion of the Org link too
+/Note that the =file:= is needed only in the "description" portion to
+create a hyperlinked image that links to an image. But having =file:=
+in the "link" portion of the Org link too shouldn't hurt./
+
+Click below image to jump to the unicorn image.
+
+[[file:/images/org-mode-unicorn-logo.png][file:/images/org-mode-unicorn-logo.png]]
+*** Link to image outside of standard Hugo =static= directory
+:PROPERTIES:
+:CUSTOM_ID: path-containing-static
+:END:
+[[../files-to-be-copied-to-static/static/images/copy-of-unicorn-logo.png]]
+
+If you link to files outside of the Hugo =static= directory, ensure
+that the path contains =/static/= if you would like to preserve the
+directory structure.
+
+Example translations between outside =static= directory paths to the
+copied location inside =static=:
+|----------------------------------+-------------------------------------------+----------------------------------------------------------------------------------------------------------------------|
+| Outside =static=                 | Copied-to location inside =static=        | Explanation                                                                                                          |
+|----------------------------------+-------------------------------------------+----------------------------------------------------------------------------------------------------------------------|
+| =~/temp/static/images/foo.png=   | =<HUGO_BASE_DIR>/static/images/foo.png=   | If the *outside* path has =/static/= in it, the directory structure after that is preserved when copied.             |
+| =~/temp/static/img/foo.png=      | =<HUGO_BASE_DIR>/static/img/foo.png=      | (same as above)                                                                                                      |
+| =~/temp/static/foo.png=          | =<HUGO_BASE_DIR>/static/foo.png=          | (same as above)                                                                                                      |
+| =~/temp/static/articles/zoo.pdf= | =<HUGO_BASE_DIR>/static/articles/zoo.pdf= | (same as above)                                                                                                      |
+|----------------------------------+-------------------------------------------+----------------------------------------------------------------------------------------------------------------------|
+
+The above path translations (when path contains =static=) hold true
+even when inside page bundle pages.
+**** Source path does not contain =/static/=
+[[../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png]]
+|--------------------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------|
+| Outside =static=         | Copied-to location inside =static=       | Explanation                                                                                                           |
+|--------------------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------|
+| =~/temp/bar/baz/foo.png= | =<HUGO_BASE_DIR>/static/ox-hugo/foo.png= | Here, as the *outside* path does not have =/static/=, the file is copied to the =ox-hugo/= dir in Hugo =static/= dir. |
+|--------------------------+------------------------------------------+-----------------------------------------------------------------------------------------------------------------------|
+- Note :: The =ox-hugo= sub-directory name is because of the default
+          value of
+          =org-hugo-default-static-subdirectory-for-externals=.
+***** Same image, but hyperlinked to itself
+[[../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png][file:../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png]]
+*** Link to an image with space in filename
+This is a link to a file with a space in the filename:
+{{{oxhugoissue(376)}}}
+[[file:../files-to-be-copied-to-static/foo/unicorn logo.png][Link to ~unicorn logo.png~]]
+** Inline hyperlinked and non-hyperlinked images                     :inline:
+:PROPERTIES:
+:EXPORT_FILE_NAME: inline-images
+:END:
+This tests the feature added to support proper export syntax for
+inline images -- {{{oxhugoissue(125)}}}.
+*** Inline non-hyperlinked image
+**** No Alt text or any other attributes
+This is an inline non-hyperlinked image without alt text or other
+attributes: [[/images/org-mode-unicorn-logo.png]].
+**** With Alt text
+#+attr_html: :alt Inline Non-hyperlinked Image
+This is an inline non-hyperlinked image with alt text:
+[[/images/org-mode-unicorn-logo.png]].
+**** With other HTML attributes
+#+attr_html: :width 30
+This is an inline non-hyperlinked image with the width attribute:
+[[/images/org-mode-unicorn-logo.png]].
+*** Non-inline non-hyperlinked image
+[[/images/org-mode-unicorn-logo.png]]
+*** Inline hyperlinked image
+**** No Alt text or any other attributes
+This is an inline non-hyperlinked image without alt text or other
+attributes:
+[[../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png][file:../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png]].
+**** With Alt text
+#+attr_html: :alt Inline Non-hyperlinked Image
+This is an inline non-hyperlinked image with alt text:
+[[../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png][file:../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png]].
+**** With other HTML attributes
+#+attr_html: :width 30
+This is an inline non-hyperlinked image with the width attribute:
+[[../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png][file:../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png]].
+**** With space in the filename
+This is an inline hyperlinked image with a space in the filename:
+{{{oxhugoissue(277)}}}
+[[../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png][file:../files-to-be-copied-to-static/foo/unicorn%20logo.png]].
+
+*** Non-inline hyperlinked image
+ [[../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png][file:../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png]]
+** Image captions
+:PROPERTIES:
+:EXPORT_DATE: 2017-07-19
+:EXPORT_FILE_NAME: image-captions
+:CUSTOM_ID: image-captions
+:END:
+#+begin_description
+Figure captions with markup.
+#+end_description
+
+Some text before image.
+
+#+caption: A unicorn! "Something in double quotes"
+[[/images/org-mode-unicorn-logo.png]]
+
+Some more text, after image.
+
+#+caption: The /same/ figure *again*, testing [[https://ox-hugo.scripter.co][a link]] too!
+[[/images/org-mode-unicorn-logo.png]]
+
+** Image with Hugo =figure= shortcode parameters set using =ATTR_HTML=
+:PROPERTIES:
+:EXPORT_FILE_NAME: figure-shortcode-and-attr-html
+:END:
+{{{oxhugoissue(17)}}}
+*** Setting =class= parameter
+#+attr_html: :class inset
+[[/images/org-mode-unicorn-logo.png]]
+
+[[https://github.com/kaushalmodi/ox-hugo/issues/17#issuecomment-313627728][Discussion]]
+**** COMMENT Below will not work!
+You cannot wrap markdown code inside HTML.
+
+As /rdwatters/ says [[https://discourse.gohugo.io/t/is-it-possible-to-insert-html-code-in-markdown-content/4867/4?u=kaushalmodi][here]],
+#+begin_quote
+HTML can be part of markdown because HTML-inside-markdown is part of
+the spec. That said, remember that the spec disallows markdown nested
+inside of HTML. So if you create a div, just make sure everything
+inside that div is valid HTML.
+#+end_quote
+
+#+begin_export md
+<div class="inset">
+#+end_export
+[[/images/org-mode-unicorn-logo.png]]
+#+begin_export md
+</div>
+#+end_export
+*** Setting =alt= parameter
+[[https://www.reddit.com/r/emacs/comments/71wy6n/orgmode_as_a_markup_language_does_make_sense_even/dnhqudn/][Reference]]
+#+attr_html: :alt Org-mode Unicorn Logo
+[[/images/org-mode-unicorn-logo.png]]
+*** Setting =title= parameter
+#+attr_html: :title Logo
+[[/images/org-mode-unicorn-logo.png]]
+*** Setting image caption
+The image caption can be set in two ways.
+1. Using the Org =#+caption= keyword
+2. Using =#+attr_html: :caption my caption=
+
+The =#+caption= is available will get the higher precedence. In the
+below image, caption is set using that:
+
+#+include: "./all-posts.org::#image-captions" :only-contents t
+
+Below, the same caption is set using the =#+attr_html= method instead:
+
+Some text before image.
+
+#+attr_html: :caption A unicorn!
+[[/images/org-mode-unicorn-logo.png]]
+
+/Enter a new line after the image link so that it's in an "Org
+paragraph" that contains just that image. That tells Org that that
+=#+attr_html= attribute is associated *only* with that image, and not
+to the text that follows that image too./
+*** Setting image size
+**** Setting =:width= parameter
+The image [[https://www.w3schools.com/tags/att_img_width.asp][width]] can be specified in *pixels* using the =:width=
+parameter. *The height of the image will be resized proportionally.*
+
+Below image is shown 50 pixels wide.
+#+attr_html: :width 50
+[[/images/org-mode-unicorn-logo.png]]
+
+Below image is shown 100 pixels wide.
+#+attr_html: :width 100
+[[/images/org-mode-unicorn-logo.png]]
+
+Below image is shown with a width of 1000 pixels! Now the size of this
+image is 200px × 200px. But the image will still show up in 1000px ×
+1000px size, but obviously heavily pixelated!
+
+#+attr_html: :width 1000
+[[/images/org-mode-unicorn-logo.png]]
+**** Setting =:height= parameter
+*NOTE*: Support for specifying =height= parameter to the Hugo =figure=
+ shortcut was only added recently in [[https://github.com/gohugoio/hugo/pull/4018][hugo PR #4018]]. So setting this
+ parameter will need *hugo v0.31* or later.
+
+-----
+
+The image [[https://www.w3schools.com/tags/att_img_height.asp][height]] can be specified in *pixels* using the =:height=
+parameter. *The weight of the image will be resized proportionally.*
+
+Below image is shown 50 pixels tall.
+#+attr_html: :height 50
+[[/images/org-mode-unicorn-logo.png]]
+
+Below image is shown 100 pixels tall.
+#+attr_html: :height 100
+[[/images/org-mode-unicorn-logo.png]]
+
+Below image is shown with a height of 1000 pixels! Now the size of
+this image is 200px × 200px. But the image will still show up in
+1000px × 1000px size, but obviously heavily pixelated!
+
+#+attr_html: :height 1000
+[[/images/org-mode-unicorn-logo.png]]
+**** Setting both =:width= and =:height=
+The *NOTE* above applies here too.. needs *hugo v0.31* or later.
+
+The figure sizes below are intentionally set /mis-proportionally/ just
+for testing.
+- =:width 100 :height 200=
+  #+attr_html: :width 100 :height 200
+  [[/images/org-mode-unicorn-logo.png]]
+- =:width 200 :height 100=
+  #+attr_html: :width 200 :height 100
+  [[/images/org-mode-unicorn-logo.png]]
+*** Multiple =ATTR_HTML=
+Below in Org source:
+#+begin_src org
+#+html: <style>.foo img { border:2px solid black; }</style>
+#+attr_html: :alt Org mode logo
+#+attr_html: :width 300 :class foo
+[[https://ox-hugo.scripter.co/test/images/org-mode-unicorn-logo.png]]
+#+end_src
+
+Rendered this:
+
+#+html: <style>.foo img { border:2px solid black; }</style>
+#+attr_html: :alt Org mode logo
+#+attr_html: :width 300 :class foo
+[[https://ox-hugo.scripter.co/test/images/org-mode-unicorn-logo.png]]
+
+*NOTE*: We cannot use =:style= in =#+attr_html= because Hugo does not
+ /yet/ support a =style= argument in the =figure= shortcode [ [[https://github.com/gohugoio/hugo/blob/488631fe0abc3667355345c7eb98ba7a2204deb5/tpl/tplimpl/template_embedded.go#L22-L37][Source]]
+ ].
+
+So using =#+html: <style>.foo img ... </style>= and =#+attr_html: :class
+ foo= as shown in the workaround above.
+*** Other
+Similarly, =:link=, =:attr=, =:attrlink= parameters in =#+attr_html=
+are also supported to set the corresponding parameter in the Hugo
+=figure= shortcode.
+** Inlined SVG                                                   :svg:inline:
+:PROPERTIES:
+:EXPORT_FILE_NAME: inlined-svg
+:END:
+#+begin_description
+Test inlined SVGs with hyperlinks.
+#+end_description
+{{{oxhugoissue(253)}}}
+
+- [[http://plantuml.com/svg][Example of generating SVG with hyperlinks using PlantUML]]
+- [[https://alligator.io/svg/hyperlinks-svg/][SVGs with hyperlinks need to be inlined]]
+
+Introduce a new ~:inlined t~ HTML attribute.
+
+#+begin_src plantuml :file images/svg-with-hyperlinks.svg :exports results
+skinparam svgLinkTarget _parent
+start
+:[[https://ox-hugo.scripter.co/ ox-hugo homepage]];
+stop
+#+end_src
+#+caption: An SVG with *hyperlinks* -- generated using PlantUML
+#+attr_html: :inlined t
+#+RESULTS:
+[[file:images/svg-with-hyperlinks.svg]]
+
+* Equations                                               :equations:mathjax:
+** Inline equations
+:PROPERTIES:
+:EXPORT_FILE_NAME: equation-latex-frag
+:EXPORT_DATE: 2017-07-31
+:END:
+#+begin_description
+Inline and /one-per-line/ equations
+#+end_description
+- Inline equations are wrapped between =\(= and =\)=.
+  - =$= wrapping also works, but it is not preferred as it comes with
+    restrictions like "there should be no whitespace between the
+    equation and the =$= delimiters".
+
+    So =$ a=b $= will not work (it will look like: $ a=b $), but
+    =$a=b$= will work (it will look like: $a=b$).
+
+    On the other hand, both =\(a=b\)= (it will look like: \(a=b\)) and
+    =\( a=b \)= (it will look like: \( a=b \)) will work.
+- One-per-line equations are wrapped between =\[= and =\]= or =$$=
+  delimiters.
+
+For example, below in Org:
+#+begin_src text
+LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1} \)
+#+end_src
+
+will look like this in Hugo rendered HTML:
+
+LaTeX formatted equation: \( E = -J \sum_{i=1}^N s_i s_{i+1 }\)
+
+(Don't see this in Markdown, see what it looks after Hugo has
+processed it.)
+
+Here's another example, taken from [[https://orgmode.org/manual/LaTeX-fragments.html][(org) LaTeX fragments]].
+
+Below in Org:
+#+begin_example
+If $a^2=b$ and \( b=2 \), then the solution must be either
+$$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \]
+#+end_example
+
+renders to:
+
+If $a^2=b$ and \( b=2 \), then the solution must be either
+$$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \]
+
+(Note that the last two equations show up on their own lines.)
+** Equations with (r), (c), ..                                    :@upstream:
+:PROPERTIES:
+:EXPORT_FILE_NAME: equations-with-r-c
+:END:
+#+begin_description
+Test to check that &reg;, &copy; and &trade; don't get interpreted
+within equations.
+#+end_description
+{{{oxhugoissue(104)}}}
+
+Below, =(r)= or =(R)= should not get converted to &reg;, =(c)= or
+=(C)= should not get converted to &copy;, and =(tm)= or =(TM)= should
+not get converted to &trade;:
+
+- $(r)$ $(R)$
+- $(c)$ $(C)$
+- $(tm)$ $(TM)$
+
+
+- \( (r) \) \( (R) \)
+- \( (c) \) \( (C) \)
+- \( (tm) \) \( (TM) \)
+
+Same as above but in /Block Math equations/:
+
+$$ (r) (R) $$
+$$ (c) (C) $$
+$$ (tm) (TM) $$
+
+\[ (r) (R) \]
+\[ (c) (C) \]
+\[ (tm) (TM) \]
+** Indented equations block                                        :indented:
+:PROPERTIES:
+:EXPORT_FILE_NAME: indented-equations
+:END:
+#+begin_description
+Testing equations with mathjax --- indented or not.
+#+end_description
+*** No indentation
+\begin{equation}
+\label{eq:1}
+C = W\log_{2} (1+\mathrm{SNR})
+\end{equation}
+*** With indentation
+{{{oxhugoissue(128)}}}
+
+    \begin{equation}
+    \label{eq:2}
+    C = W\log_{2} (1+\mathrm{SNR})
+    \end{equation}
+
+Above equation (/{{{latex}}} environment/) is the same as the first
+one, but:
+- It is indented in the Org source.
+
+  /This test verifies that the indentation is auto-removed in the
+  exported Markdown file./
+- It has a different label (=\label{eq:2}= instead of =\label{eq:1}=);
+  Mathjax *requires the equation labels to be unique*.
+** Blackfriday-specific escaping in equations :escaping:@upstream:blackfriday:
+:PROPERTIES:
+:EXPORT_FILE_NAME: equations-bf-escaping
+:END:
+#+begin_description
+Test to check that the backslashes are correctly escaped.
+#+end_description
+{{{oxhugoissue(138)}}}
+*** =\|= → =\\|=
+$$
+C(w,b) = \frac{1}{2n} \sum_x{{\|y(x)-a\|}^2}
+$$
+*** =\\= at EOL → =\\\\\\=
+\begin{align}
+a^1  &= x \\
+a^2  &=  σ(W^2a^1 + b^2) \\
+a^3  &=  σ(W^3a^2 + b^3) \\
+⋯ \\
+a^L  &= σ(W^La^{L-1} + b^L) \\
+y  &= a^L
+\end{align}
+**** Same as above, but without space before the =\\= at EOL
+\begin{align}
+a^1  &= x\\
+a^2  &=  σ(W^2a^1 + b^2)\\
+a^3  &=  σ(W^3a^2 + b^3)\\
+⋯\\
+a^L  &= σ(W^La^{L-1} + b^L)\\
+y  &= a^L
+\end{align}
+*** =\{= → =\\{=, =\}= → =\\}=
+{{{oxhugoissue(258)}}}
+
+\begin{equation}
+\phi_j(x) = \mathrm{exp}\left\{ - \frac{(x - \mu_j)^2}{2s^2} \right\}
+\end{equation}
+*** ~x <0 \\~
+{{{oxhugoissue(348)}}}
+
+\begin{equation}
+\begin{cases}
+u_t = ku_{xx} \\
+u(x,0) = T_1 , & x <0 \\
+u(x,0) = T_2 , & x > 0
+\end{cases}
+\end{equation}
+*** ~[ .. ]( .. )~ in a LaTeX equation
+{{{oxhugoissue(349)}}}
+
+In the below equation, without the escaping hack, the Markdown parser
+gets fooled into thinking that ~[ e^{at} \right](z)~ is a Markdown
+link!
+
+\begin{equation}
+\mathcal{L}\left[ e^{at} \right](z) = \frac{1}{z-a}
+\end{equation}

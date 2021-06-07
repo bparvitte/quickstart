@@ -1,4 +1,10 @@
-baseURL = "https://bparvitte.github.io/quickstart/"
-languageCode = "fr-fr"
-title = "Mon test Hugo"
-theme = "hugo-bare-min-theme"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site 2"
+
+# [params]
+# BookTheme = 'dark'
+
+
+[markup.goldmark.renderer]
+  unsafe = true
