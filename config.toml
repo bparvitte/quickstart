@@ -1,7 +1,7 @@
 baseURL = "https://bparvitte.github.io/quickstart/"
 languageCode = "fr-fr"
 title = "Mon test Hugo"
-theme = "hugo-book"
+theme = "book"
 
 # [params]
 # BookTheme = 'dark'
