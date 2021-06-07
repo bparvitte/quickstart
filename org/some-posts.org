@@ -578,3 +578,566 @@ link!
 \begin{equation}
 \mathcal{L}\left[ e^{at} \right](z) = \frac{1}{z-a}
 \end{equation}
+
+* Source blocks                                                   :src_block:
+** Code fence                                                    :code_fence:
+*** Code-fenced source blocks (default behavior)
+:PROPERTIES:
+:EXPORT_FILE_NAME: code-fenced-src-blocks-default
+:EXPORT_DATE: 2017-07-31
+:END:
+The source blocks are code-fenced by default.
+
+#+include: "./all-posts.org::#example-text-with-code-blocks" :only-contents t
+-----
+*It is necessary to set the Hugo site config variable
+=pygmentsCodeFences= to =true= for syntax highlighting to work for
+fenced code blocks.*
+*** Code-fenced source blocks
+:PROPERTIES:
+:EXPORT_HUGO_CODE_FENCE: t
+:EXPORT_FILE_NAME: code-fenced-src-blocks
+:EXPORT_DATE: 2017-07-13T17:49:22-04:00
+:END:
+Here the source blocks are explicitly set to be code-fenced by setting
+the =EXPORT_HUGO_CODE_FENCE= property to =t=.
+
+#+include: "./all-posts.org::#example-text-with-code-blocks" :only-contents t
+-----
+*It is necessary to set the Hugo site config variable
+=pygmentsCodeFences= to =true= for syntax highlighting to work for
+fenced code blocks.*
+*** Code-fenced source blocks with backticks                      :backticks:
+:PROPERTIES:
+:EXPORT_HUGO_CODE_FENCE: t
+:EXPORT_FILE_NAME: code-fenced-src-blocks-with-backticks
+:END:
+This code block contains a fenced code block with 4 backticks:
+#+begin_src md
+````emacs-lisp
+(message "Hello")
+````
+#+end_src
+
+This code block contains a fenced code block with 3 backticks:
+#+begin_src md
+```emacs-lisp
+(message "Hello again")
+```
+#+end_src
+
+This code block contains no backticks:
+#+begin_src emacs-lisp
+(message "Hello again x2")
+#+end_src
+
+This code block again contains a fenced code block with 4 backticks:
+#+begin_src md
+````emacs-lisp
+(message "Hello again x3")
+````
+#+end_src
+
+This code block contains a fenced code block with 6 backticks:
+#+begin_src md
+``````emacs-lisp
+(message "Hello again x4")
+``````
+#+end_src
+
+This code block again contains a fenced code block with 3 backticks:
+#+begin_src md
+```emacs-lisp
+(message "Hello again x5")
+```
+#+end_src
+
+This code block once again contains no backticks:
+#+begin_src emacs-lisp
+(message "Hello again x6")
+#+end_src
+** Highlight Shortcode                                  :highlight:shortcode:
+*** Source blocks with =highlight= shortcode
+:PROPERTIES:
+:EXPORT_HUGO_CODE_FENCE:
+:EXPORT_FILE_NAME: highlight-shortcode-src-blocks
+:EXPORT_DATE: 2017-07-31
+:END:
+Note that to disable the code fence option, the value portion of the
+property needs to be left *empty* instead of setting to =nil=!
+#+begin_example
+:PROPERTIES:
+:EXPORT_HUGO_CODE_FENCE:
+:END:
+#+end_example
+#+include: "./all-posts.org::#example-text-with-code-blocks" :only-contents t
+*** Source blocks with line number annotation
+:PROPERTIES:
+:EXPORT_FILE_NAME: source-block-with-line-numbers
+:END:
+- [[https://orgmode.org/manual/Literal-examples.html][Org reference]]
+- [[https://gohugo.io/content-management/syntax-highlighting/][Hugo =highlight= shortcode with line numbers]]
+**** Cases
+:PROPERTIES:
+:CUSTOM_ID: source-block-line-number-cases
+:END:
+***** Default new line number start
+****** Org source
+#+begin_src org :noweb yes
+<<src-block-n-default-start>>
+#+end_src
+****** Output
+#+begin_src org :noweb yes :exports results :results output replace :eval yes
+<<src-block-n-default-start>>
+#+end_src
+***** Specify new line number start
+****** Org source
+#+begin_src org :noweb yes
+<<src-block-n-custom-start>>
+#+end_src
+****** Output
+#+begin_src org :noweb yes :exports results :results output replace :eval yes
+<<src-block-n-custom-start>>
+#+end_src
+***** Default continued line numbers
+****** Org source
+#+begin_src org :noweb yes
+<<src-block-n-default-continue>>
+#+end_src
+****** Output
+#+begin_src org :noweb yes :exports results :results output replace :eval yes
+<<src-block-n-default-continue>>
+#+end_src
+***** Specify continued line numbers jump
+****** Org source
+#+begin_src org :noweb yes
+<<src-block-n-custom-continue>>
+#+end_src
+****** Output
+#+begin_src org :noweb yes :exports results :results output replace :eval yes
+<<src-block-n-custom-continue>>
+#+end_src
+*** Source blocks with highlighting
+:PROPERTIES:
+:EXPORT_FILE_NAME: source-block-with-highlighting
+:CUSTOM_ID: source-blocks-with-highlighting
+:END:
+**** Without line numbers
+:PROPERTIES:
+:CUSTOM_ID: source-blocks-with-highlighting-no-linenums
+:END:
+****** Org source
+#+begin_src org :noweb yes
+<<src-block-hl-without-n>>
+#+end_src
+****** Output
+#+begin_src org :noweb yes :exports results :results output replace :eval yes
+<<src-block-hl-without-n>>
+#+end_src
+Above highlighting might look weird as the highlighting spans the full
+page/container width. This could be either called a bug in Hugo, or
+the HTML limitation.
+
+A workaround is below.. *use line numbers too!*.
+****** Highlighting only 1 line
+******* Org source
+#+begin_src org :noweb yes
+<<src-block-hl-without-n-just-1-line>>
+#+end_src
+******* Output
+#+begin_src org :noweb yes :exports results :results output replace :eval yes
+<<src-block-hl-without-n-just-1-line>>
+#+end_src
+**** With line numbers *not* starting from 1
+:PROPERTIES:
+:CUSTOM_ID: source-blocks-with-highlighting-with-linenums-not-starting-from-1
+:END:
+With line numbers enabled, the highlighting is limited to the width of
+the HTML table rows (because =ox-hugo= sets the =linenos=table= option
+in the =highlight= shortcode when line numbers are enabled).
+
+- Note 1 :: When using both, switches (like =-n=), and header args
+            (like =:hl_lines=), the _switches have to come first_.
+- Note 2 :: The line numbers in the value for =:hl_lines= parameter is
+            always with the starting line number reference of 1. That
+            has no relation with the value of the line numbers
+            displayed using the =-n= or =+n= switches!
+****** Org source
+#+begin_src org :noweb yes
+<<src-block-hl-with-n-not-1>>
+#+end_src
+****** Output
+#+begin_src org :noweb yes :exports results :results output replace :eval yes
+<<src-block-hl-with-n-not-1>>
+#+end_src
+**** With line numbers
+:PROPERTIES:
+:CUSTOM_ID: source-blocks-with-highlighting-with-linenums
+:END:
+****** Org source
+#+begin_src org :noweb yes
+<<src-block-hl-with-n>>
+#+end_src
+****** Output
+#+begin_src org :noweb yes :exports results :results output replace :eval yes
+<<src-block-hl-with-n>>
+#+end_src
+** Source block with caption                                        :caption:
+:PROPERTIES:
+:EXPORT_FILE_NAME: source-block-caption
+:END:
+#+caption: Prefix value in =local.mk=
+#+begin_src makefile
+prefix = /dir/where/you/want/to/install/org # Default: /usr/share
+#+end_src
+
+#+caption: Hello --- Caption with em-dash -- and -- en-dash
+#+begin_src emacs-lisp
+(message "hello")
+#+end_src
+** Source and example blocks with list syntax in a list
+*** Source blocks                                    :src_block:lists:hyphen:
+**** Source block with list syntax in a list          :@upstream:blackfriday:
+:PROPERTIES:
+:EXPORT_DATE: 2017-08-01
+:EXPORT_FILE_NAME: list-has-src-block-with-list-syntax
+:END:
+An upstream bug in {{{bfissue(239)}}} caused fenced code blocks in
+lists to not render correctly if they contain Markdown syntax
+lists. =ox-hugo= provides a hack to get around that bug.
+
+Below is an example of such a case:
+
+- List item 1
+  #+begin_src md
+  - List item 1.1 in code block
+  - List item 1.2 in code block
+  #+end_src
+- List item 2
+  #+begin_src md
+  + List item 2.1 in code block
+  + List item 2.2 in code block
+  #+end_src
+- List item 3
+
+Another such example, but with space before a hyphen in source block:
+
+1. First item
+   #+begin_src yaml
+   ports:
+     foo: bar
+   #+end_src
+2. Second item
+   #+begin_src yaml
+   ports:
+    - port: 80
+   #+end_src
+3. Third item
+**** Source block without list syntax in a list
+:PROPERTIES:
+:EXPORT_DATE: 2017-08-01
+:EXPORT_FILE_NAME: list-has-src-block-but-no-list-syntax
+:END:
+This case is not affected by /Blackfriday/ [[https://github.com/russross/blackfriday/issues/239][Issue #239]] as the fenced
+code block does not have Markdown syntax lists.
+- List item 1
+  #+begin_src md
+  ,*abc*
+  /def/
+  =def=
+  #+end_src
+- List item 2
+**** Source block with list syntax but not in a list
+:PROPERTIES:
+:EXPORT_DATE: 2017-08-01
+:EXPORT_FILE_NAME: src-block-outside-list-with-list-syntax
+:END:
+#+begin_src md
+- list 1
+#+end_src
+*** Example blocks                               :lists:hyphen:example_block:
+**** Example block with list syntax in a list         :@upstream:blackfriday:
+:PROPERTIES:
+:EXPORT_FILE_NAME: list-has-example-block-with-list-syntax
+:END:
+An upstream bug in {{{bfissue(239)}}} caused fenced code blocks in
+lists to not render correctly if they contain Markdown syntax
+lists. =ox-hugo= provides a hack to get around that bug.
+
+Below is an example of such a case:
+
+- List item 1
+  #+begin_example
+  - List item 1.1 in code block
+  - List item 1.2 in code block
+  #+end_example
+- List item 2
+  #+begin_example
+  + List item 2.1 in code block
+  + List item 2.2 in code block
+  #+end_example
+- List item 3
+
+Another such example, but with spaces before the hyphens in example
+blocks:
+
+- List item 1
+  #+begin_example
+   - List item 1.1 in code block
+   - List item 1.2 in code block
+  #+end_example
+- List item 2
+  #+begin_example
+    + List item 2.1 in code block
+    + List item 2.2 in code block
+  #+end_example
+- List item 3
+** Org Babel Results    :babel:results:indentation:example_block:fixed_block:
+:PROPERTIES:
+:EXPORT_FILE_NAME: org-babel-results
+:END:
+#+begin_description
+Testing the export of Org Babel ~#+results:~ blocks with and without
+wrapping with HTML attributes.
+#+end_description
+*** "Fixed block" Results block
+Below also tests that the indentation in *results* blocks is
+preserved.
+
+#+begin_src python :exports both :results output
+str = 'a\tbc'
+print(str[1:])
+#+end_src
+
+#+results:
+: 	bc
+
+The whitespace before "bc" in the results block above should be
+preserved.
+**** "Fixed block" Results block with ~#+attr_html~
+#+begin_src python :exports both :results output
+str = 'd\tef'
+print(str[1:])
+#+end_src
+
+#+attr_html: :class results-fixed-block
+#+attr_css: :color blue
+#+results:
+: 	ef
+
+Above results block will be in _blue_ text.
+*** "Example block" Results block
+#+begin_src nim :exports both :results output
+echo "abc\ndef\nghi\njkl\nmno\npqr\nstu\nvwx\nyz0\n123\n456\n789"
+#+end_src
+
+#+results:
+#+begin_example
+abc
+def
+ghi
+jkl
+mno
+pqr
+stu
+vwx
+yz0
+123
+456
+789
+#+end_example
+**** "Example block" Results block with ~#+attr_html~
+#+begin_src nim :exports both :results output
+echo "ABC\nDEF\nGHI\nJKL\nMNO\nPQR\nSTU\nVWX\nYZ0\n123\n456\n789"
+#+end_src
+
+#+attr_html: :class results-example-block
+#+attr_css: :color green
+#+results:
+#+begin_example
+ABC
+DEF
+GHI
+JKL
+MNO
+PQR
+STU
+VWX
+YZ0
+123
+456
+789
+#+end_example
+
+Above results block will be in _green_ text.
+** Indented source block :indented:lists:code_fence:highlight:src_block:@upstream:
+:PROPERTIES:
+:EXPORT_FILE_NAME: source-block-indented
+:END:
+#+begin_description
+Test that indented source blocks, and also the ones in lists export
+fine.
+#+end_description
+
+Some content.
+
+#+begin_src emacs-lisp
+(defun small-shell ()
+  (interactive)
+  (split-window-vertically)
+  (other-window 1)
+  (shrink-window (- (window-height) 12))
+  (ansi-term))
+#+end_src
+*** Code blocks in list using code fences
+Reference: {{{hugoissue(4006)}}}
+
+- List item 1
+  #+begin_src emacs-lisp
+  (message "I am in list at level-1 indentation")
+  #+end_src
+  - List item 1.1
+    #+begin_src emacs-lisp
+    (message "I am in list at level-2 indentation")
+    #+end_src
+    - List item 1.1.1
+      #+begin_src emacs-lisp
+      (message "I am in list at level-3 indentation")
+      #+end_src
+  - List item 2.1
+    #+begin_src emacs-lisp
+    (message "I am in list back at level-2 indentation")
+    #+end_src
+- List item 2
+  #+begin_src emacs-lisp
+  (message "I am in list back at level-1 indentation")
+  #+end_src
+
+#+begin_src emacs-lisp
+(message "And now I am at level-0 indentation")
+#+end_src
+*** Code blocks in list using ~highlight~ shortcode
+Reference: {{{hugoissue(4717)}}}, {{{oxhugoissue(161)}}}
+
+This is an *upstream* bug in ~hugo~ as of 2018-05-12. The issues is
+that when the code blocks in ~highlight~ shortcodes are inserted at
+the required indentation levels in lists.. so that they get rendered
+*in* the list at *that* indentation level, those indentations are not
+removed by ~hugo~, and thus become part of those code blocks.
+
+Also, related to this issue, it can be seen that all such indented
+code blocks have an empty second line too, probably just due to the
+unremoved indentation on the last line of those code blocks.
+
+In the above section, the same code blocks are code-fenced instead of
+using ~highlight~ shortcode, and the extra indentation is not seen
+there.
+
+- List item 1
+  #+begin_src emacs-lisp -n
+  (message "I am in list at level-1 indentation")
+  #+end_src
+  - List item 1.1
+    #+begin_src emacs-lisp -n
+    (message "I am in list at level-2 indentation")
+    #+end_src
+    - List item 1.1.1
+      #+begin_src emacs-lisp -n
+      (message "I am in list at level-3 indentation")
+      #+end_src
+  - List item 2.1
+    #+begin_src emacs-lisp -n
+    (message "I am in list back at level-2 indentation")
+    #+end_src
+- List item 2
+  #+begin_src emacs-lisp -n
+  (message "I am in list back at level-1 indentation")
+  #+end_src
+
+#+begin_src emacs-lisp -n
+(message "And now I am at level-0 indentation")
+#+end_src
+** Markdown source block with Hugo shortcodes                     :shortcode:
+:PROPERTIES:
+:EXPORT_FILE_NAME: source-block-md-with-hugo-shortcodes
+:EXPORT_HUGO_CODE_FENCE: t
+:END:
+*** Shortcodes escaped
+The =figure= shortcodes in the two Markdown source code blocks below
+should *not* be expanded.. they should be visible verbatim.
+
+- {&lbrace;< .. >}&rbrace; --- [[https://gohugo.io/content-management/shortcodes/#shortcodes-without-markdown][Shortcodes without Markdown]]
+- {&lbrace;% .. %}&rbrace; --- [[https://gohugo.io/content-management/shortcodes/#shortcodes-with-markdown][Shortcodes with Markdown]]
+**** Code block using code fences
+#+begin_src md
+{{< figure src="https://ox-hugo.scripter.co/test/images/org-mode-unicorn-logo.png" >}}
+{{% figure src="https://ox-hugo.scripter.co/test/images/org-mode-unicorn-logo.png" %}}
+#+end_src
+**** Code block using =highlight= shortcode
+Here, the =-n= switch is added to the Org source block to
+auto-enable[fn:4] using the =highlight= shortcode.
+#+begin_src md -n
+{{< figure src="https://ox-hugo.scripter.co/test/images/org-mode-unicorn-logo.png" >}}
+{{% figure src="https://ox-hugo.scripter.co/test/images/org-mode-unicorn-logo.png" %}}
+#+end_src
+*** Shortcodes *not* escaped
+The =figure= shortcodes in the below example block *should* be
+expanded.. you should be seeing little unicorns below.
+#+begin_example
+{{< figure src="https://ox-hugo.scripter.co/test/images/org-mode-unicorn-logo.png" >}}
+{{% figure src="https://ox-hugo.scripter.co/test/images/org-mode-unicorn-logo.png" %}}
+#+end_example
+Above a =#+begin_example= .. =#+end_example= block is chosen
+arbitrarily. The Hugo shortcodes will remain unescaped in *any*
+source/example block except for _Markdown source blocks_ (annotated
+with =md= language).
+-----
+*It is necessary to set the Hugo site config variable
+=pygmentsCodeFences= to =true= for syntax highlighting to work for
+fenced code blocks.*
+** Source blocks with ATTR_HTML                      :attr___html:attr___css:
+:PROPERTIES:
+:EXPORT_FILE_NAME: source-blocks-with-attr-html
+:END:
+Some text.
+
+#+attr_html: :class indent-block
+#+attr_css: :padding-left 50px
+#+begin_src emacs-lisp
+(message (mapconcat #'identity
+                    '("Hello," "how" "are" "you?")
+                    " "))
+#+end_src
+
+Some more text.
+** Org Source Block via Pygments                          :pygments:noexport:
+:PROPERTIES:
+:EXPORT_FILE_NAME: org-source-block-pygments
+:END:
+/This test case is not important after Hugo 0.28 as this was a
+workaround for a limitation in the Pygments syntax highlighter. Hugo
+0.28 onwards, the default syntax highlighter is Chroma, which does not
+have that limitation, and thus no need for this workaround./
+-----
+Test case for the case where user has set
+=org-hugo-langs-no-descr-in-code-fences= to a list containing the
+element =org=.
+
+/As this variable is dependent on user's config, this post is not set
+to be exported by default./
+
+The [[https://discourse.gohugo.io/t/fenced-code-block-with-language-unsupported-by-pygments/7710][issue]] with Hugo will be seen if _all_ of the below are true:
+- =pygmentsCodeFences = true= *and* =pygmentsUseClassic = true= (Hugo
+  ≥ 0.28 -- default value is =false=) are set in the Hugo site
+  =config.toml=.
+- A source block's language is set to one that's not supported by
+  Pygments (like [[https://bitbucket.org/birkenfeld/pygments-main/issues/719/wishlist-support-org][org]], and thus the below example with source code
+  language set to =org=).
+- =org-hugo-langs-no-descr-in-code-fences= is set to a value not
+  containing that language descriptor (=org= in this case).
+#+begin_src org
+# Org comment
+Export this post after setting
+=org-hugo-langs-no-descr-in-code-fences= to =(org)= and temporarily
+removing the =noexport= tag.
+#+end_src
