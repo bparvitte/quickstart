@@ -1,6 +1,7 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site 2"
+baseURL = "https://bparvitte.github.io/quickstart/"
+languageCode = "fr-fr"
+title = "Mon test Hugo"
+theme = "hugo-book"
 
 # [params]
 # BookTheme = 'dark'
