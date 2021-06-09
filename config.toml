@@ -1,4 +1,4 @@
-baseURL = "https://bparvitte.github.io/"
+baseURL = "https://bparvitte.github.io/quickstart/"
 languageCode = "fr-fr"
 title = "Mon test Hugo"
 theme = "book"
@@ -13,4 +13,4 @@ BookPortableLinks = true
   unsafe = true
 
   [Params.source]
-    url = "https://bparvitte.github.io/quickstart/" # Mandatory, used in hugo-bare-min-theme single.html, baseof.html
+#    url = "https://bparvitte.github.io/quickstart/" # Mandatory, used in hugo-bare-min-theme single.html, baseof.html
