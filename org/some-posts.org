@@ -1415,12 +1415,12 @@ line, while the location where the rendered bibliography should be placed can be
 Infrared heterodyne spectrometers have been successfully used for astronomical
 and geophysical applications (cite:BetzAJ1976a,BetzAJ1981a,KostiukIP1976a,KostiukJMS1981a). The Reims GSMA laboratory has developed
 for several years high resolution heterodyne receivers for atmospheric ozone
-studies. The local oscillator was a \ce{CO2} laser and the spectral range was about
+studies. The local oscillator was a $\ce{CO2}$ laser and the spectral range was about
 1.5 GHz.
 
 The development of a wider band heterodyne receiver has many
 advantages. First, it enables us to study lines which were out of range of the
-first apparatus. For the same reason, we use now either a \ce{^{12}C^{16}O2} or
+first apparatus. For the same reason, we use now either a $\ce{^{12}C^{16}O2}$ or
 a \ce{^{12}C^{18}O2}, laser as local oscillator. We also need this wide band
 spectrometer for recording ground-based atmospheric absorption spectra. For
 those spectra, the sun is used as a source and the absorption by the low
