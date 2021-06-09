@@ -3,6 +3,7 @@ languageCode = "fr-fr"
 title = "Mon test Hugo"
 theme = "book"
 relativeURLs = false
+canonifyURLs = true
 
 [params]
 # BookTheme = 'dark'
