@@ -7,7 +7,7 @@ draft = false
 ### Introduction {#introduction}
 
 Infrared heterodyne spectrometers have been successfully used for astronomical
-and geophysical applications (([Betz et al. 1976](#org3066d73); [Betz 1981](#orgfcd8557); [Kostiuk et al. 1976](#orgf8cf3cf); [Kostiuk, Hillman, and Faris 1981](#org77e8b9a))). The Reims GSMA laboratory has developed
+and geophysical applications (([Betz et al. 1976](#orgccfa21f); [Betz 1981](#org4784f5e); [Kostiuk et al. 1976](#orgbbee88c); [Kostiuk, Hillman, and Faris 1981](#orgb11e21e))). The Reims GSMA laboratory has developed
 for several years high resolution heterodyne receivers for atmospheric ozone
 studies. The local oscillator was a \ce{CO2} laser and the spectral range was about
 1.5 GHz.
@@ -37,7 +37,7 @@ below.
 #### Optical part {#optical-part}
 
 This part has been previously described, and so only a short description
-necessary for the understanding of this work will be given here (([Thiébeaux et al. 1988](#org2b01a51); [Courtois, Thiébeaux, and Delahaigue 1984](#org0389321))).
+necessary for the understanding of this work will be given here (([Thiébeaux et al. 1988](#org37dc24d); [Courtois, Thiébeaux, and Delahaigue 1984](#org79ba81e))).
 The beams of the local oscillator and of two thermal sources are focused
 onto a photodiode, which acts as an infrared mixer.
 The photodiode is one of the most important element of the spectrometer. The
@@ -54,7 +54,7 @@ are used. One of the beam is for reference and the other for measurement.
 Transmission is proportional to the ratio of the two signals. This technique
 suppresses low frequency drift of the spectrometer. For laboratory
 studies, an absorption cell is put on the second beam. For atmospheric studies, the
-measurement beam is obtained with a sun tracker (([Delahaigue et al. 1988](#org9aae895))).
+measurement beam is obtained with a sun tracker (([Delahaigue et al. 1988](#org061f075))).
 
 
 #### Radio frequency analysis {#radio-frequency-analysis}
@@ -124,7 +124,7 @@ Many methods for measuring the bandwidth of a photodetector areavailable. The
 best known is the measure of the noise spectrum of the detector when it is
 illuminated by a laser. Another consists in recording the beat signal of a local
 oscillator beam and a frequency-shifted beam. The shifted beam is often obtained
-by using all acousto-optic modulator (([Vérié and Sirieix 1972](#org3921929))). As tunable diode
+by using all acousto-optic modulator (([Vérié and Sirieix 1972](#org0b50e2d))). As tunable diode
 lasers emitting in the 10 µm region are available in our laboratory., we decided
 to use the TDL's beam as the frequency-shifted beam. In this case, the radiation
 of the \ce{CO2} laser and of the TDL are superimposed on the HgCdTe photodiode.
@@ -165,7 +165,7 @@ In order to check this new apparatus, we decided to record an absorption
 line shifted from more than 2 GHz from the local oscillator.
 The Ammonia molecule seems to be a good choice for these tests.
 The research of coincidences between \ce{NH3} and the \ce{CO2} laser lines in the Hitran
-Datatabase (([Rothman et al. 1992](#org4f11e7f))) leads to only a few possibilities. We chose to record the \ce{NH3}
+Datatabase (([Rothman et al. 1992](#org96b82f9))) leads to only a few possibilities. We chose to record the \ce{NH3}
 R(5,1) line near 9 µm  (see Table [tab:1](#tab:1)). The line's center is shifted from - 2343 MHz
 from the 9P10 \ce{CO2} laser line. As we need at least 200 MHz on both sides to
 record the whole line profile, this line is at the limit of the 2.5 GHz heterodyne
@@ -181,7 +181,7 @@ The characteristics are:
 The most important element we can see on this spectrum is that the line position is
 slightly different from the expected value. The line center is found at - 2100 MHz
 &plusmn; 5 MHz from the 9P10 \ce{CO2}\_laser line. (Table [tab:2](#tab:2)).This value is coherent with
-previous measurements (([Sasada et al. 1986](#org1b07203))).
+previous measurements (([Sasada et al. 1986](#orga24e82d))).
 
 <div class="table-caption">
   <span class="table-number">Table 1</span>:
@@ -201,8 +201,8 @@ previous measurements (([Sasada et al. 1986](#org1b07203))).
 | Source                               | wave number | shift withthe 9P 10line of \ce{CO2} |
 |--------------------------------------|-------------|-------------------------------------|
 |                                      | (cm 1)      | (MHz)                               |
-| ([Rothman et al. 1992](#org4f11e7f)) | 1055.5470   | -2343                               |
-| ([Sasada et al. 1986](#org1b07203))  | 1055.5540   | -2130                               |
+| ([Rothman et al. 1992](#org96b82f9)) | 1055.5470   | -2343                               |
+| ([Sasada et al. 1986](#orga24e82d))  | 1055.5540   | -2130                               |
 | This work                            | 1055.5550   | -2100                               |
 
 </ox-hugo/1995ParvitteIJIMWafig3.pdf>
@@ -220,22 +220,22 @@ association with an isotopic \ce{<sup>12</sup>C<sup>18</sup>O\_2} laser to avoid
 
 ## Bibliography {#bibliography}
 
-<a id="orgfcd8557"></a>Betz, Albert L. 1981. “Ethylene in IRC+ 10216.” _The Astrophysical Journal_ 244:L103–5.
+<a id="org4784f5e"></a>Betz, Albert L. 1981. “Ethylene in IRC+ 10216.” _The Astrophysical Journal_ 244:L103–5.
 
-<a id="org3066d73"></a>Betz, Albert L., M. A. Johnson, Robert A. McLaren, and Edmund C. Sutton. 1976. “Heterodyne Detection of CO2 Emission Lines and Wind Velocities in the Atmosphere of Venus.” _The Astrophysical Journal_ 208. AA(California, University, Berkeley, Calif.), AB(California, University, Berkeley, Calif.), AC(California, University, Berkeley, Calif.):L141.
+<a id="orgccfa21f"></a>Betz, Albert L., M. A. Johnson, Robert A. McLaren, and Edmund C. Sutton. 1976. “Heterodyne Detection of CO2 Emission Lines and Wind Velocities in the Atmosphere of Venus.” _The Astrophysical Journal_ 208. AA(California, University, Berkeley, Calif.), AB(California, University, Berkeley, Calif.), AC(California, University, Berkeley, Calif.):L141.
 
-<a id="org0389321"></a>Courtois, Daniel, Claude Thiébeaux, and Alain Delahaigue. 1984. “Heterodyne Spectrometer for the 10 Micron Region.” _International Journal of Infrared and Millimeter Waves_ 5:185–95.
+<a id="org79ba81e"></a>Courtois, Daniel, Claude Thiébeaux, and Alain Delahaigue. 1984. “Heterodyne Spectrometer for the 10 Micron Region.” _International Journal of Infrared and Millimeter Waves_ 5:185–95.
 
-<a id="org9aae895"></a>Delahaigue, Alain, Claude Thiébeaux, Daniel Courtois, and Hervé Le Corre. 1988. “Design of a Sun Tracker for a Laser Heterodyne Spectrometer.” _Infrared Physics_ 28 (1):1–6.
+<a id="org061f075"></a>Delahaigue, Alain, Claude Thiébeaux, Daniel Courtois, and Hervé Le Corre. 1988. “Design of a Sun Tracker for a Laser Heterodyne Spectrometer.” _Infrared Physics_ 28 (1):1–6.
 
-<a id="org77e8b9a"></a>Kostiuk, Theodor, John J. Hillman, and James L. Faris. 1981. “Precision Heterodyne Measurements of Ozone Spectral Lines Near 9.5 ΜM.” _Journal of Molecular Spectroscopy_ 89 (2). Elsevier:397–404.
+<a id="orgb11e21e"></a>Kostiuk, Theodor, John J. Hillman, and James L. Faris. 1981. “Precision Heterodyne Measurements of Ozone Spectral Lines Near 9.5 ΜM.” _Journal of Molecular Spectroscopy_ 89 (2). Elsevier:397–404.
 
-<a id="orgf8cf3cf"></a>Kostiuk, Theodor, Michael J. Mumma, Michael M. Abbas, and David Buhl. 1976. “Sensitivity of an Astronomical Infrared Heterodyne Spectrometer.” _Infrared Physics_ 16:61–64.
+<a id="orgbbee88c"></a>Kostiuk, Theodor, Michael J. Mumma, Michael M. Abbas, and David Buhl. 1976. “Sensitivity of an Astronomical Infrared Heterodyne Spectrometer.” _Infrared Physics_ 16:61–64.
 
-<a id="org4f11e7f"></a>Rothman, Laurence S., Robert R. Gamache, Richard H. Tipping, Curtis P. Rinsland, Mary Ann H. Smith, D. Chris Benner, Vidya Malathy Devi, et al. 1992. “The HITRAN Molecular Database: Editions of 1991 and 1992.” _Journal of Quantitative Spectroscopy and Radiative Transfer_ 48 (5-6):469–507.
+<a id="org96b82f9"></a>Rothman, Laurence S., Robert R. Gamache, Richard H. Tipping, Curtis P. Rinsland, Mary Ann H. Smith, D. Chris Benner, Vidya Malathy Devi, et al. 1992. “The HITRAN Molecular Database: Editions of 1991 and 1992.” _Journal of Quantitative Spectroscopy and Radiative Transfer_ 48 (5-6):469–507.
 
-<a id="org1b07203"></a>Sasada, Hiroyuki, R.H. Schwendeman, Gottfried Magerl, Robert L. Poynter, and Jack S. Margolis. 1986. “High-Resolution Spectroscopy of the V2 = 2 a ← V2 = 1 S Band of 14NH3.” _Journal of Molecular Spectroscopy_ 117 (2). Elsevier BV:317–30. <http://dx.doi.org/10.1016/0022-2852(86)>90157-8.
+<a id="orga24e82d"></a>Sasada, Hiroyuki, R.H. Schwendeman, Gottfried Magerl, Robert L. Poynter, and Jack S. Margolis. 1986. “High-Resolution Spectroscopy of the V2 = 2 a ← V2 = 1 S Band of 14NH3.” _Journal of Molecular Spectroscopy_ 117 (2). Elsevier BV:317–30. <http://dx.doi.org/10.1016/0022-2852(86)>90157-8.
 
-<a id="org2b01a51"></a>Thiébeaux, Claude, Daniel Courtois, Alain Delahaigue, Hervé Le Corre, Jean-Claude Mouanda, and André Fayt. 1988. “Dual-Beam Laser Heterodyne Spectrometer Ethylene Absorption Spectrum in the 10 Μm Range.” _Applied Physics B: Photophysics and Laser Chemistry_ B47:313–18.
+<a id="org37dc24d"></a>Thiébeaux, Claude, Daniel Courtois, Alain Delahaigue, Hervé Le Corre, Jean-Claude Mouanda, and André Fayt. 1988. “Dual-Beam Laser Heterodyne Spectrometer Ethylene Absorption Spectrum in the 10 Μm Range.” _Applied Physics B: Photophysics and Laser Chemistry_ B47:313–18.
 
-<a id="org3921929"></a>Vérié, Christian, and Michel B. Sirieix. 1972. “Gigahertz Cutoff Frequency Capabilities of CdHgTe Photovoltaic Detectors at 10.6 Μ.” _IEEE Journal of Quantum Electronics_ 8 (2):180–84.
+<a id="org0b50e2d"></a>Vérié, Christian, and Michel B. Sirieix. 1972. “Gigahertz Cutoff Frequency Capabilities of CdHgTe Photovoltaic Detectors at 10.6 Μ.” _IEEE Journal of Quantum Electronics_ 8 (2):180–84.

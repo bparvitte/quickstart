@@ -1,4 +1,4 @@
-#+hugo_base_dir: ../
+#+hugo_base_dir: ~/ssds/Projets/Hugo/quickstart2/
 
 #+seq_todo: TODO DRAFT DONE
 #+seq_todo: TEST__TODO | TEST__DONE
@@ -1491,8 +1491,7 @@ lower than the Doppler line width of the studied molecules.
 
 #+CAPTION: Scheme of the RF analyzer label:fig:1
 #+ATTR_LaTeX: width=0.75\columnwidth
-[[file:figures/1995ParvitteIJIMWafig1.png]]
-
+[[file:./figures/1995ParvitteIJIMWafig1.png]]
 *** Data acquisition
 The RF diode gives a signal proportional to the incident power on the of
 photodetector. We use two lock-in amplifiers (model EGG 5301) to discriminate
