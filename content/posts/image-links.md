@@ -19,7 +19,7 @@ org-mode-unicorn-logo.png
 [[/static/images/org-mode-unicorn-logo.png]]
 ```
 
-<a id="org6bfd41e"></a>
+<a id="orgc0fd1ae"></a>
 
 {{< figure src="/images/OpticalCorrelationSpectroscopy4.png" caption="Figure 1: Don't click this image -- It's not a hyperlink" >}}
 
@@ -54,7 +54,7 @@ tag and look the same size.
 
 Do **not** use `file:` prefix in the Description if you want the image
 link to show up as-is i.e. not be replaced by the image-at-link like
-in [2](#org0944341):
+in [2](#orge1a3a5c):
 
 ```org
 # Org source
@@ -75,7 +75,7 @@ Click below image to jump to the unicorn image.
 [[/images/org-mode-unicorn-logo.png][file:../files-to-be-copied-to-static/static/images/unicorn-logo-small.png]]
 ```
 
-<a id="org0944341"></a>
+<a id="orge1a3a5c"></a>
 
 {{< figure src="../files-to-be-copied-to-static/static/images/unicorn-logo-small.png" caption="Figure 2: Click this image -- It's a hyperlink" link="/images/org-mode-unicorn-logo.png" >}}
 
@@ -89,7 +89,7 @@ NOTE
 Here's a similar link with `#+name` specified.. which should also be
 clickable.
 
-<a id="orga9a2c47"></a>
+<a id="orgf68f845"></a>
 
 {{< figure src="/images/org-mode-unicorn-logo.png" link="/images/org-mode-unicorn-logo.png" >}}
 

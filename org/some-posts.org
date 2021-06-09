@@ -1404,9 +1404,11 @@ line, while the location where the rendered bibliography should be placed can be
 :PROPERTIES:
 :EXPORT_FILE_NAME: test-self-publi
 :EXPORT_DATE: <2021-06-09 Mer>
+:EXPORT_OPTIONS: h:3
+:EXPORT_HUGO_LEVEL_OFFSET: 1
 :END:
-#+TITLE: Wide band (2.5 GHz) infrared heterodyne spectrometer
 
+#+TITLE: Wide band (2.5 GHz) infrared heterodyne spectrometer
 #+BIBLIOGRAPHY: /Users/bertrand/ssds/Projets/Biblio/BibFiles/Encours.bib
 
 
