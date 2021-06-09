@@ -19,7 +19,7 @@ org-mode-unicorn-logo.png
 [[/static/images/org-mode-unicorn-logo.png]]
 ```
 
-<a id="orgfb690b9"></a>
+<a id="orgc8953b0"></a>
 
 {{< figure src="/images/OpticalCorrelationSpectroscopy4.png" caption="Figure 1: Don't click this image -- It's not a hyperlink" >}}
 
@@ -54,7 +54,7 @@ tag and look the same size.
 
 Do **not** use `file:` prefix in the Description if you want the image
 link to show up as-is i.e. not be replaced by the image-at-link like
-in [2](#orge04aae2):
+in [2](#org2daff16):
 
 ```org
 # Org source
@@ -75,9 +75,9 @@ Click below image to jump to the unicorn image.
 [[/images/org-mode-unicorn-logo.png][file:../files-to-be-copied-to-static/static/images/unicorn-logo-small.png]]
 ```
 
-<a id="orge04aae2"></a>
+<a id="org2daff16"></a>
 
-{{< figure src="../files-to-be-copied-to-static/static/images/unicorn-logo-small.png" caption="Figure 2: Click this image -- It's a hyperlink" link="/images/org-mode-unicorn-logo.png" >}}
+{{< figure src="/images/unicorn-logo-small.png" caption="Figure 2: Click this image -- It's a hyperlink" link="/images/org-mode-unicorn-logo.png" >}}
 
 NOTE
 : `file:` has to be used in the **Description component** of the
@@ -89,7 +89,7 @@ NOTE
 Here's a similar link with `#+name` specified.. which should also be
 clickable.
 
-<a id="orga50c7b2"></a>
+<a id="orgea13813"></a>
 
 {{< figure src="/images/org-mode-unicorn-logo.png" link="/images/org-mode-unicorn-logo.png" >}}
 
@@ -107,7 +107,7 @@ Click below image to jump to the unicorn image.
 
 ## Link to image outside of standard Hugo `static` directory {#path-containing-static}
 
-{{< figure src="../files-to-be-copied-to-static/static/images/copy-of-unicorn-logo.png" >}}
+{{< figure src="/images/copy-of-unicorn-logo.png" >}}
 
 If you link to files outside of the Hugo `static` directory, ensure
 that the path contains `/static/` if you would like to preserve the
@@ -129,7 +129,7 @@ even when inside page bundle pages.
 
 ### Source path does not contain `/static/` {#source-path-does-not-contain-static}
 
-{{< figure src="../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png" >}}
+{{< figure src="/ox-hugo/copy-2-of-unicorn-logo.png" >}}
 
 | Outside `static`         | Copied-to location inside `static`       | Explanation                                                                                                             |
 |--------------------------|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -143,11 +143,11 @@ Note
 
 #### Same image, but hyperlinked to itself {#same-image-but-hyperlinked-to-itself}
 
-{{< figure src="../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png" link="../files-to-be-copied-to-static/foo/copy-2-of-unicorn-logo.png" >}}
+{{< figure src="/ox-hugo/copy-2-of-unicorn-logo.png" link="/ox-hugo/copy-2-of-unicorn-logo.png" >}}
 
 
 ## Link to an image with space in filename {#link-to-an-image-with-space-in-filename}
 
 This is a link to a file with a space in the filename:
 `ox-hugo` Issue #[376](https://github.com/kaushalmodi/ox-hugo/issues/376)
-[Link to `unicorn logo.png`](<../files-to-be-copied-to-static/foo/unicorn logo.png>)
+[Link to `unicorn logo.png`](</ox-hugo/unicorn logo.png>)
