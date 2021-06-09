@@ -1405,7 +1405,7 @@ line, while the location where the rendered bibliography should be placed can be
 :EXPORT_FILE_NAME: test-self-publi
 :EXPORT_DATE: <2021-06-09 Mer>
 :EXPORT_OPTIONS: h:3
-:EXPORT_HUGO_LEVEL_OFFSET: 1
+:EXPORT_HUGO_LEVEL_OFFSET: -1
 :END:
 
 #+TITLE: Wide band (2.5 GHz) infrared heterodyne spectrometer
@@ -1553,7 +1553,7 @@ for low frequency (< 50 MHz).
 
 #+CAPTION: ! 1 beat signal of the \ce{CO2} laser and a TDL - 2 confocal etalon fringes label:fig:2
 #+ATTR_LaTeX: scale=0.75
-[[file:figures/1995ParvitteIJIMWafig2.pdf]]
+[[file:figures/1995ParvitteIJIMWafig2.png]]
 
 *** First spectra
 In order to check this new apparatus, we decided to record an absorption
@@ -1594,7 +1594,7 @@ previous measurements (cite:SasadaJMS1986a).
 
 #+CAPTION:  Heterodyne spectrum of the R(5,1) Ammonia line label:fig:3
 #+ATTR_LaTeX: scale=0.75
-[[file:figures/1995ParvitteIJIMWafig3.pdf]]
+[[file:figures/1995ParvitteIJIMWafig3.png]]
 
 ** Conclusion
 A double beam heterodyne spectrometer with 2.5 GHz bandwidth was built in Reims.
