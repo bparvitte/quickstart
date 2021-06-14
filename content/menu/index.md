@@ -4,12 +4,12 @@ headless: true
 
 - [**Example Site**]({{< relref "/docs/example" >}})
 - [Table of Contents]({{< relref "/docs/example/table-of-contents" >}})
+  - [2004Z]({{< relref "/docs/articles/2004ZeninariMP" >}})
   - [With ToC]({{< relref "/docs/example/table-of-contents/with-toc" >}})
   - [Without ToC]({{< relref "/docs/example/table-of-contents/without-toc" >}})
 - [Collapsed]({{< relref "/docs/example/collapsed" >}})
   - [3rd]({{< relref "/docs/example/collapsed/3rd-level" >}})
     - [4th]({{< relref "/docs/example/collapsed/3rd-level/4th-level" >}})
-- [2004Z]({{< relref "/docs/articles/2004ZeninariMP" >}})
 <br />
 
 - **Shortcodes**
