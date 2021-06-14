@@ -1,13 +1,13 @@
 baseURL = "https://bparvitte.github.io/quickstart/"
 languageCode = "fr-fr"
-title = "Mon test Hugo"
+title = "Bertrand Parvitte"
 theme = "book"
 relativeURLs = false
 canonifyURLs = true
 
 [params]
 # BookTheme = 'dark'
-BookPortableLinks = true
+BookPortableLinks = false
 
 
 [markup.goldmark.renderer]
