@@ -11,7 +11,7 @@ BookPortableLinks = false
 
 
 [markup.goldmark.renderer]
-  unsafe = true
+  unsafe = false
 
   [Params.source]
 #    url = "https://bparvitte.github.io/quickstart/" # Mandatory, used in hugo-bare-min-theme single.html, baseof.html
