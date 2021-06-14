@@ -14,7 +14,7 @@ Below, (r) or (R) should not get converted to ®, (c) or (C) should not get conv
 \(( r)\) \(( R)\) \(( c)\) \(( C)\) \(( tm)\) \(( TM)\) \( ( r) \) \( ( R) \) \( ( c) \) \( ( C) \) \( ( tm) \) \( ( TM) \) Same as above but in Block Math equations:</description></item><item><title>Indented equations block</title><link>https://bparvitte.github.io/quickstart/posts/indented-equations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bparvitte.github.io/quickstart/posts/indented-equations/</guid><description>No indentation # \begin{equation} \label{eq:1} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
 With indentation # ox-hugo Issue #128
 \begin{equation} \label{eq:2} C = W\log_{2} (1+\mathrm{SNR}) \end{equation}
-Above equation (LaTeX environment) is the same as the first one, but:
+Above equation (LaTeXenvironment) is the same as the first one, but:
 It is indented in the Org source.
 This test verifies that the indentation is auto-removed in the exported Markdown file.
 It has a different label (\label{eq:2} instead of \label{eq:1}); Mathjax requires the equation labels to be unique.</description></item></channel></rss>
