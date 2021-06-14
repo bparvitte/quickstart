@@ -38,14 +38,14 @@
 :EXPORT_FILE_NAME: index
 :EXPORT_DATE: <2021-06-03 Jeu>
 :END:
-Export this *first* post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
+Export this first post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
 * Index2
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: /
 :EXPORT_FILE_NAME: _index
 :EXPORT_DATE: <2021-06-02 Mer>
 :END:
-Export this *first* post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
+Export this first post only by bringing point here and doing =M-x org-hugo-export-wim-to-md=.
 
 * Post 1
 :PROPERTIES:
@@ -1485,7 +1485,7 @@ difficult to find a mixer which had sufficient bandwidth on the three ports (IF,
 LO). We finally decided to use the Anzac MDC 154 (IF 0.1 - 3000 MHz, RF, LO 0.3- 5 GHz). The upper limit of the mixer on the LO port is slightly to low.
 The last part of the analyzer is composed of a selective amplifier centered at 2.7
 GHz (Micronic) and a four sections cavity filter (Trilithic 2.7 GHz, 10 MHz). The
-detection of the RF signal is done by a RF diode Texscan CD51 operated in the
+ detection of the RF signal is done by a RF diode Texscan CD51 operated in the
 square-law mode. This type of analyzer has several advantages. The apparatus
 function is well known and given by the filter response. The resolution is equal to
 the width of this response. With a 10 MHz filter, the resolution is at least 5 times
@@ -1609,4 +1609,178 @@ association with an isotopic \ce{^{12}C^{18}O_2} laser to avoid atmospheric
 
 
 
+
+
+* Articles
+
+** 2004ZéninariMP
+:PROPERTIES:
+:EXPORT_FILE_NAME: 2004ZeninariMP
+:EXPORT_DATE: 2004
+:EXPORT_HUGO_SECTION: /docs/articles/
+:END:
+Zéninari, V., Parvitte, B., Courtois, D., Lavrentieva, N. N., Ponomarev, Y. N., & Durry, G., Pressure broadening and shift coefficients of h2o due to perturbation by n2, o2, h2 and he in the 1.39 \mu m region: experiment and calculations, Molecular Physics, 102(16-17), 1697–1706 (2004).
+{{< button href="https://github.com/alex-shpak/hugo-book" >}}Contribute{{< /button >}}
+{{< button href="https://doi.org/10.1080/00268970412331287133" >}}doi{{< /button >}}
+** 2007ZéninariJQSRT
+Zéninari, V., Joly, L., Grouiez, B., Parvitte, B., & Barbe, A., Study of so2 line parameters with a quantum cascade laser spectrometer around 1090 cm- 1: comparison with calculations of the ν1 and ν1 + ν2 - ν2 bands of 32 so2 and the ν1 band of 34 so2, Journal of Quantitative Spectroscopy and Radiative Transfer, 105(2), 312–325 (2007).
+
+** 1998ZéninariJQRT
+Zéninari, V., Parvitte, B., Courtois, D., Delahaigue, A., & Thiébeaux, C., An instrument for atmospheric detection of nh3 by laser heterodyne radiometry, Journal of Quantitative Spectroscopy and Radiative Transfer, 59(3-5), 353–359 (1998).
+** 2004ZéninariIPT
+Zéninari, V., Vicet, A., Parvitte, B., Joly, L., & Durry, G., In situ sensing of atmospheric co2 with laser diodes near 2.05 \mu m: a spectroscopic study, Infrared Physics and Technology, 45(3), 229–237 (2004).
+** 2003ZéninariIPT
+Zéninari, V., Parvitte, B., Courtois, D., Kapitanov, V. A., & Ponomarev, Y. N., Methane detection on the sub-ppm level with a near-infrared diode laser photoacoustic sensor, Infrared Physics and Technology, 44(4), 253–261 (2003).
+** 2016ZéninariIJT
+Zéninari, V., Vallon, R., Risser, C., & Parvitte, B., Photoacoustic detection of methane in large concentrations with a helmholtz sensor: simulation and experimentation, International Journal of Thermophysics, 37(1),  (2016).  http://dx.doi.org/10.1007/s10765-015-2018-9
+** 2010ZéninariCEJP
+Zéninari, V., Grossel, A., Joly, L., Decarpenterie, T., Grouiez, B., Bonno, B., & Parvitte, B., Photoacoustic spectroscopy for trace gas detection with cryogenic and room-temperature continuous-wave quantum cascade lasers, Central European Journal of Physics, 8(2), 194–201 (2010).
+** 2006ZéninariAPb
+Zéninari, V., Parvitte, B., Joly, L., Le Barbu, T., Amarouche, N., & Durry, G., Laboratory spectroscopic calibration of infrared tunable laser spectrometers for the in situ sensing of the earth and martian atmospheres, Applied Physics B: Lasers \& Optics, 85(2-3), 265–272 (2006).
+** 2001ZéninariAPb
+Zéninari, V., Parvitte, B., Courtois, D., Kapitanov, V. A., & Ponomarev, Y. N., Measurements of air and noble-gas broadening and shift coefficients of the methane r3 triplet of the 2v3 band, Applied Physics B: Lasers \& Optics, 72(8), 953–959 (2001).
+** 1997 ZéninariAPb
+Zéninari, V., De Backer-Barilly, M., Parvitte, B., & Courtois, D., Absolute intensity measurement of a ν3 ozone line at saturated vapor pressure with a laser heterodyne spectrometer, Applied Physics B: Lasers \& Optics, 63(2), 179–183 (1997).
+** 2003ZéninariAOO
+Zéninari, V., Parvitte, B., Courtois, D., Pouchet, I., Durry, G., & Ponomarev, Y. N., Pressure lineshift and broadening coefficient of h2o by hydrogen and helium in the 1.39 \mu m region with a tunable diode laser spectrometer, Atmospheric and Oceanic Optics, (), 1–4 (2003).
+** 2016VallonIPT
+Vallon, R., Parvitte, B., Bizet, L., De Naurois, G. M., Simozrag, B., Maisons, G., Carras, M., …, External cavity coherent quantum cascade laser array, Infrared Physics and Technology, (),  (2016).  http://dx.doi.org/doi:10.1016/j.infrared.2016.03.013
+** 2002SongAPb
+Song, K., Cha, H. K., Kapitanov, V. A., Ponomarev, Y. N., Rostov, A. P., Courtois, D., Parvitte, B., …, Differential helmholtz resonant photoacoustic cell for spectroscopy and gas analysis with room-temperature diode lasers, Applied Physics B: Lasers \& Optics, 75(2-3), 215–227 (2002).
+** 2016RouxelSAb
+Rouxel, J., Coutard, J., Gidon, S., Lartigue, O., Nicoletti, S., Parvitte, B., Vallon, R., …, Miniaturized differential helmholtz resonators for photoacoustic trace gas detection, Sensors and Actuators B: Chemical, 236(), 1104–1110 (2016).  http://dx.doi.org/10.1016/j.snb.2016.06.074
+** 2015RouxelPE
+Rouxel, J., Coutard, J., Gidon, S., Lartigue, O., Nicoletti, S., Parvitte, B., Vallon, R., …, Development of a miniaturized differential photoacoustic gas sensor, Procedia Engineering, 120(), 396–399 (2015).  http://dx.doi.org//10.1016/j.proeng.2015.08.650
+** 2014RisserAPb
+Risser, C., Parvitte, B., Vallon, R., & Zéninari, V., Optimization and complete characterization of a photoacoustic gas detector, Applied Physics B: Lasers \& Optics, (),  (2014).  http://dx.doi.org/10.1007/s00340-014-5988-6
+** 2006RégaliaJQSRT
+Régalia-Jarlot, L., Zéninari, V., Parvitte, B., Grossel, A., Thomas, X., Heyden, P. v. d., & Durry, G., A complete study of the line intensities of four bands of co2 around 1.6 and 2.0 \mu m: a comparison between fourier transform and diode laser measurements, Journal of Quantitative Spectroscopy and Radiative Transfer, 101(2), 325–338 (2006).
+** 2004PouchetJQSRT
+Pouchet, I., Zéninari, V., Parvitte, B., & Durry, G., Diode laser spectroscopy of co2 in the 1.6 \mu m region for the in situ sensing of the middle atmosphere, Journal of Quantitative Spectroscopy and Radiative Transfer, 83(3-4), 619–628 (2004).
+** 2006PonomarevOS
+Ponomarev, Y. N., Ptashnik, I. V., Zéninari, V., Parvitte, B., Courtois, D., & Durry, G., The absorption line profiles of h2o near 1.39 \mu m in binary mixtures with n2, o2, and h2 at low pressures, Optics and Spectroscopy, 100(5), 682–688 (2006).
+** 2004ParvitteSAA2
+Parvitte, B., Joly, L., Zéninari, V., & Courtois, D., Preliminary results of heterodyne detection with quantum-cascade lasers in the 9 \mu m region, Spectrochimica Acta Part A, 60(14), 3285–3290 (2004).
+** 2004ParvitteSAA1
+Parvitte, B., Zéninari, V., Thiébeaux, C., Delahaigue, A., & Courtois, D., Infrared laser heterodyne systems, Spectrochimica Acta Part A, 60(5), 1193–1213 (2004).
+** 1999ParvitteSAA
+Parvitte, B., Thiébeaux, C., & Courtois, D., Tunable heterodyne spectrometer in the 9 \mu m range with selected lead--salt diodes, Spectrochimica Acta Part A, 55(10), 2027–2037 (1999).
+** 2002ParvitteJQSRT
+Parvitte, B., Zéninari, V., Pouchet, I., & Durry, G., Diode laser spectroscopy of h2o in the 7165-7185 cm-1 range for atmospheric applications, Journal of Quantitative Spectroscopy and Radiative Transfer, 75(4), 493–505 (2002).
+** 1998ParvitteJQSRT
+Parvitte, B., Zéninari, V., Courtois, D., Delahaigue, A., Thiébeaux, C., Beyer, T., Schlegelmich, H., …, Linewidth narrowing of 10 \mu m diode lasers by external feedback, Journal of Quantitative Spectroscopy and Radiative Transfer, 59(3-5), 361–368 (1998).
+** 2000ParvitteJP
+Parvitte, B., Weidmann, D., Courtois, D., & Faye, M., Détection hétérodyne infrarouge et diodes lasers, Journal de Physique IV, (),  (2000).
+** 2000ParvitteJPbis
+Parvitte, B., Weidmann, D., Courtois, D., & Faye, M., Ir heterodyne detection and laser diodes., Journal de Physique IV, 10(), 8–197–8–198 (2000).
+** 2020ParvitteJMSA
+Parvitte, B., Vallon, R., Ibrahim, C. M., Jacquemin, C., & Zéninari, V., Quantitative finite element modelling of compact photoacoustic gas sensors, Journal of Materials Sciences and Applications, 3(), 1–8 (2020).
+** 1995ParvitteIJIMW
+Parvitte, B., Thomas, X., & Courtois, D., Wide band (2.5 ghz) infrared heterodyne spectrometer, International Journal of Infrared and Millimeter Waves, 16(9), 1533–1540 (1995).
+** 2013ParvitteAPb
+Parvitte, B., Risser, C., Vallon, R., & Zéninari, V., Quantitative simulation of photoacoustic signals using finite element modelling software, Applied Physics B: Lasers \& Optics, (),  (2013).  http://dx.doi.org/10.1007/s00340-013-5344-2
+** 2009MulierAPb
+Mulier, M., Zéninari, V., Joly, L., Decarpenterie, T., Parvitte, B., Jeandet, P., & Liger-Belair, G., Development of a compact co2 sensor based on near-infrared laser technology for enological applications, Applied Physics B: Lasers \& Optics, 94(4), 725–733 (2009).  http://dx.doi.org/10.1007/s00340-009-3389-z
+** 2018MoriauxSAb
+Moriaux, A., Vallon, R., Cilindre, C., Parvitte, B., Liger-Belair, G., & Zéninari, V., Development and validation of a diode laser sensor for gas-phase co2 monitoring above champagne and sparkling wines, Sensors and Actuators B: Chemical, 257(), 745–752 (2018).
+** 2018MoriauxFC
+Moriaux, A., Vallon, R., Parvitte, B., Zéninari, V., Liger-Belair, G., & Cilindre, C., Monitoring gas-phase co2 in the headspace of champagne glasses through combined diode laser spectrometry and micro-gas chromatography analysis, Food Chemistry, 264(), 255–262 (2018).  http://dx.doi.org/10.1016/j.foodchem.2018.04.094
+** 2012MappeAS
+Mappe-Fogaing, I., Joly, L., Durry, G., Dumelié, N., Decarpenterie, T., Cousin, J., Parvitte, B., …, Wavelet denoising for infrared laser spectroscopy and gas detection., Applied Spectroscopy, 66(6), 700–10 (2012).  http://dx.doi.org/10.1366/11-06459
+** 2019MAmmezIPT
+Mammez, M., Vallon, R., Polak, F., Parvitte, B., & Zéninari, V., Design and implementation of a heliostat for atmospheric spectroscopy, Infrared Physics \& Technology, 97(), 235–243 (2019).  http://dx.doi.org/10.1016/j.infrared.2019.01.006
+** 2013MammezIPT
+Mammez, D., Stoeffler, C., Cousin, J., Vallon, R., Mammez, M., Joly, L., Parvitte, B., …, Photoacoustic gas sensing with a commercial external cavity-quantum cascade laser at 10.5 \mu m, Infrared Physics and Technology, 61(), 14–19 (2013).  http://dx.doi.org/10.1016/j.infrared.2013.07.002
+** 2014MammezAPb
+Mammez, D., Vallon, R., Parvitte, B., Mammez, M., Carras, M., & Zéninari, V., Development of an external cavity quantum cascade laser spectrometer at 7.5 \mu m for gas detection, Applied Physics B: Lasers \& Optics, 116(4), 951–958 (2014).  http://dx.doi.org/10.1007/s00340-014-5782-5
+** 2012LigerBelairAFNR
+Liger-Belair, G., Beaumont, F., Bourget, M., Pron, H., Parvitte, B., Zéninari, V., Polidori, G., …, Carbon dioxide and ethanol release from champagne glasses, under standard tasting conditions., Advances in Food and Nutrition Research, 67(), 289–340 (2012).  http://dx.doi.org/10.1016/B978-0-12-394598-3.00007-1
+** 2012LiSAA
+Li, J. S., Durry, G., Cousin, J., Joly, L., Parvitte, B., & Zéninari, V., Self-induced pressure shift and temperature dependence measurements of co₂ at 2.05 micron with a tunable diode laser spectrometer, Spectrochimica Acta Part A, 85(), 74–78 (2012).  http://dx.doi.org/10.1016/j.saa.2011.09.016
+** 2009LiSAA
+Li, J. S., Joly, L., Cousin, J., Parvitte, B., Bonno, B., Zéninari, V., & Durry, G., Diode laser spectroscopy of two acetylene isotopologues ((12)c(2)h(2), (13)c(12)ch(2)) in the 1.533 \mu m region for the phobos-grunt space mission, Spectrochimica Acta Part A, 74(5), 1204–8 (2009).  http://dx.doi.org/10.1016/j.saa.2009.09.037
+** 2011LiJQSRT
+Li, J. S., Durry, G., Cousin, J., Joly, L., Parvitte, B., Flamant, P. H., Gibert, F., …, Tunable diode laser measurement of pressure-induced shift coefficients of co2 around 2.05 \mu m for lidar application, Journal of Quantitative Spectroscopy and Radiative Transfer, 119(9), 1411–1419 (2011).
+** 2010LiJQSRT
+Li, J. S., Durry, G., Cousin, J., Joly, L., Parvitte, B., & Zéninari, V., Self-broadening coefficients and positions of acetylene around 1.533 \mu m studied by high-resolution diode laser absorption spectrometry, Journal of Quantitative Spectroscopy and Radiative Transfer, 111(15), 2332–2340 (2010).
+** 2006LeBarbuJQSRT
+Le Barbu, T., Zéninari, V., Parvitte, B., Courtois, D., & Durry, G., Line strengths and self-broadening coefficients of carbon dioxide isotopologues (13co2 and 18o12c16o) near 2.04\mu m for the in situ laser sensing of the martian atmosphere, Journal of Quantitative Spectroscopy and Radiative Transfer, 98(2), 264–276 (2006).  http://dx.doi.org/10.1016/j.jqsrt.2005.05.089
+** 2006LeBarbuAPb
+Le Barbu, T., Parvitte, B., Zéninari, V., Vinogradov, I., Korablev, O., & Durry, G., Diode laser spectroscopy of h2o and co2 in the 1.877-\mu m region for the in situ monitoring of the martian atmosphere, Applied Physics B: Lasers \& Optics, 82(1), 133–140 (2006).  http://dx.doi.org/10.1007/s00340-005-2020-1
+** 2002KapitanovSAA
+Kapitanov, V. A., Zéninari, V., Parvitte, B., Courtois, D., & Ponomarev, Y. N., Optimisation of photoacoustic resonant cells with commercial microphones for diode laser gas detection, Spectrochimica Acta Part A, 58(11), 2397–2404 (2002).
+** 2006JolyOL
+Joly, L., Zéninari, V., Parvitte, B., Courtois, D., & Durry, G., Water-vapor isotope ratio measurements in air with a quantum-cascade laser spectrometer, Optics Letters, 31(2), 143–145 (2006).
+** 2011JolyLP
+Joly, L., Zéninari, V., Decarpenterie, T., Cousin, J., Grouiez, B., Mammez, D., Durry, G., …, Continuous-wave quantum cascade lasers absorption spectrometers for trace gas detection in the atmosphere, Laser Physics, 21(4), 815–812 (2011).  http://dx.doi.org/10.1134/S1054660X11070127
+** 2008JolyJQSRT
+Joly, L., Gibert, F., Grouiez, B., Grossel, A., Parvitte, B., Durry, G., & Zéninari, V., A complete study of co2 line parameters around 4845 cm-1 for lidar applications, Journal of Quantitative Spectroscopy and Radiative Transfer, 109(3), 426–434 (2008).
+** 2006JolyJQSRT
+Joly, L., Parvitte, B., Zéninari, V., Courtois, D., & Durry, G., A spectroscopic study of water vapor isotopologues h216o, h218o and hdo using a continuous wave dfb quantum cascade laser in the 6.7 \mu m region for atmospheric applications, Journal of Quantitative Spectroscopy and Radiative Transfer, 102(2), 129–138 (2006).
+** 2011JolyAPb
+Joly, L., Decarpenterie, T., Dumelié, N., Thomas, X., Mappe-Fogaing, I., Mammez, D., Vallon, R., …, Development of a versatile atmospheric n2o sensor based on quantum cascade laser technology at 4.5 \mu m, Applied Physics B: Lasers \& Optics, 103(3), 717–723 (2011).  http://dx.doi.org/10.1007/s00340-011-4522-3
+** 2007JolyAPb
+Joly, L., Parvitte, B., Zéninari, V., & Durry, G., Development of a compact co2 sensor open to the atmosphere and based on near-infrared laser technology at 2.68 \mu m, Applied Physics B: Lasers \& Optics, 86(4), 743–748 (2007).
+** 2003JolyAPb
+Joly, L., Zéninari, V., Parvitte, B., Weidmann, D., Courtois, D., Bonetti, Y., Aellen, T., …, Spectroscopic study of the ν1 band of so2 using a continuous-wave dfb qcl at 9.1 \mu m, Applied Physics B: Lasers \& Optics, 77(6-7), 703–706 (2003).
+** 2009JolyAO
+Joly, L., Marnas, F., Gibert, F., Bruneau, D., Grouiez, B., Flamant, P. H., Durry, G., …, Laser diode absorption spectroscopy for accurate co(2) line parameters at 2 \mu m: consequences for space-based dial measurements and potential biases, Applied Optics, 48(29), 5475–83 (2009).
+** 2008JolyAO
+Joly, L., Robert, C., Parvitte, B., Catoire, V., Durry, G., Richard, G., Nicoullaud, B., …, Development of a spectrometer using a continuous wave distributed feedback quantum cascade laser operating at room temperature for the simultaneous analysis of n2o and ch4 in the earth's atmosphere, Applied Optics, 47(9), 1206–1214 (2008).
+** 2009GrouiezOL
+Grouiez, B., Parvitte, B., Joly, L., & Zéninari, V., Alternative method for gas detection using pulsed quantum-cascade-laser spectrometers, Optics Letters, 34(2), 181–183 (2009).
+** 2010GrouiezAPb
+Grouiez, B., Zéninari, V., Joly, L., & Parvitte, B., Pulsed quantum-cascade-laser spectroscopy with intermediate-size pulses: application to nh3 in the 10 \mu m region, Applied Physics B: Lasers \& Optics, 100(2), 265–273 (2010).
+** 2008GrouiezAPb
+Grouiez, B., Parvitte, B., Joly, L., Courtois, D., & Zéninari, V., Comparison of a quantum cascade laser used in both cw and pulsed modes. application to the study of so2 lines around 9 \mu m, Applied Physics B: Lasers \& Optics, 90(2), 177–186 (2008).  http://dx.doi.org/10.1007/s00340-007-2857-6
+** 2006GrosselSAA
+Grossel, A., Zéninari, V., Joly, L., Parvitte, B., Courtois, D., & Durry, G., New improvements in methane detection using a helmholtz resonant photoacoustic laser sensor: a comparison between near-ir diode lasers and mid-ir quantum cascade lasers, Spectrochimica Acta Part A, 63(5), 1021–1028 (2006).
+** 2008GrosselJQSRT
+Grossel, A., Zéninari, V., Parvitte, B., Joly, L., Courtois, D., & Durry, G., Quantum cascade laser spectroscopy of n2o in the 7.9 \mu m region for the in situ monitoring of the atmosphere, Journal of Quantitative Spectroscopy and Radiative Transfer, 109(10), 1845–1855 (2008).
+** 2007GrosselIPT
+Grossel, A., Zéninari, V., Joly, L., Parvitte, B., Durry, G., & Courtois, D., Photoacoustic detection of nitric oxide with a helmholtz resonant quantum cascade laser sensor, Infrared Physics and Technology, 51(2), 95–101 (2007).
+** 2007GrosselAPb
+Grossel, A., Zéninari, V., Parvitte, B., Joly, L., & Courtois, D., Optimization of a compact photoacoustic quantum cascade laser spectrometer for atmospheric flux measurements: application to the detection of methane and nitrous oxide, Applied Physics B: Lasers \& Optics, 88(3), 483–492 (2007).  http://dx.doi.org/10.1007/s00340-007-2719-2
+** 2014GlièreS
+Glière, A., Rouxel, J., Brun, M., Parvitte, B., Zéninari, V., & Nicoletti, S., Challenges in the design and fabrication of a lab-on-a-chip photoacoustic gas sensor, Sensors, 14(), 957–974 (2014).  http://dx.doi.org/10.3390/s140100957
+** 2013GlièreIJT
+Glière, A., Rouxel, J., Parvitte, B., Boutami, S., & Zéninari, V., A coupled model for the simulation of miniaturized and integrated photoacoustic gas detector, International Journal of Thermophysics, 34(11), 2119–2135 (2013).  http://dx.doi.org/10.1007/s10765-013-1534-8
+** 2009GibertSAA
+Gibert, F., Joly, L., Xuéref-Rémy, I., Schmidt, M., Royer, A., Flamant, P. H., Ramonet, M., …, Inter-comparison of 2\mu m heterodyne differential absorption lidar, laser diode spectrometer, licor ndir analyzer and flasks measurements of near-ground atmospheric co2 mixing ratio, Spectrochimica Acta Part A, 71(5), 1914–1921 (2009).
+** 2008GibertBLM
+Gibert, F., Xuéref-Rémy, I., Joly, L., Schmidt, M., Cuesta, J., Davis, K. J., Ramonet, M., …, A case study of co2, co and particles content evolution in the suburban atmospheric boundary layer using a 2-\mu m doppler dial, a 1-\mu m backscatter lidar and an array of in-situ sensors, Boundary-Layer Meteorology, 128(3), 381–401 (2008).  http://dx.doi.org/10.1007/s10546-008-9296-8
+** 1998FayeAP
+Faye, M. E., Parvitte, B., & Delahaigue, A., Photoacoustic spectrometer with 5 mhz resolution for rf spectral analysis., Annales de Physique, 23(), 1–273–1–274 (1998).
+** 2004DurrySAA
+Durry, G., Amarouche, N., Zéninari, V., Parvitte, B., Le Barbu, T., & Ovarlez, J., In situ sensing of the middle atmosphere with balloonborne near-infrared laser diodes, Spectrochimica Acta Part A, 60(14), 3371–3379 (2004).
+** 2005DurryJQSRT
+Durry, G., Zéninari, V., Parvitte, B., Le Barbu, T., Lefèvre, F., Ovarlez, J., & Gamache, R. R., Pressure-broadening coefficients and line strengths of h2o near 1.39 \mu m: application to the in situ sensing of the middle atmosphere with balloonborne diode lasers, Journal of Quantitative Spectroscopy and Radiative Transfer, 94(3-4), 387–403 (2005).
+** 2002DurryJAC
+Durry, G., Hauchecorne, A., Ovarlez, J., Ovarlez, H., Pouchet, I., Zéninari, V., & Parvitte, B., In situ measurement of h2o and ch4 with telecommunication laser diodes in the lower stratosphere: dehydration and indication of a tropical air intrusion at mid-latitudes, Journal of Atmospheric Chemistry, 43(3), 175–194 (2002).
+** 2008DurryIPT
+Durry, G., Joly, L., Le Barbu, T., Parvitte, B., & Zéninari, V., Laser diode spectroscopy of the h2o isotopologues in the 2.64 \mu m region for the in situ monitoring of the martian atmosphere, Infrared Physics and Technology, 51(3), 229–235 (2008).  http://dx.doi.org/10.1016/j.infrared.2007.05.004
+** 2010DurryAPb
+Durry, G., Li, J. S., Vinogradov, I., Titov, A. Y., Joly, L., Cousin, J., Decarpenterie, T., …, Near infrared diode laser spectroscopy of c2h2, h2o, co2 and their isotopologues and the application to tdlas, a tunable diode laser spectrometer for the martian phobos-grunt space mission, Applied Physics B: Lasers \& Optics, 99(1-2), 339–351 (2010).  http://dx.doi.org/10.1007/s00340-010-3924-y
+** 2008DurryAPb
+Durry, G., Amarouche, N., Joly, L., Liu, X., Parvitte, B., & Zéninari, V., Laser diode spectroscopy of h2o at 2.63 \mu m for atmospheric applications, Applied Physics B: Lasers \& Optics, 90(3-4), 573–580 (2008).  http://dx.doi.org/10.1007/s00340-007-2884-3
+** 1996DelahaigueIPT
+Delahaigue, A., Courtois, D., Thiébeaux, C., Kalite, S., & Parvitte, B., Atmospheric laser heterodyne detection, Infrared Physics and Technology, 37(1), 7–12 (1996).
+** 1995DeBackerJQSRT
+De~Backer, M., Parvitte, B., Zéninari, V., & Courtois, D., Precise and absolute intensity measurement of the ν3(10, 5, 6)-(9, 5, 5) ozone line with high resolution spectrometers, Journal of Quantitative Spectroscopy and Radiative Transfer, 54(6), 1009–1018 (1995).
+** 1998DeBackerJQSRT
+De Backer-Barilly, M., Parvitte, B., Thomas, X., Zéninari, V., & Courtois, D., Tunable diode laser spectrometer apparatus function, Journal of Quantitative Spectroscopy and Radiative Transfer, 59(3-5), 345–352 (1998).
+** 2001CourtoisRRDAS
+Courtois, D., Delahaigue, A., Parvitte, B., Thiébeaux, C., Weidmann, D., & Zéninari, V., Detection and analysis of atmospheric gases by infrared laser spectroscopy, Recent Research Developments in Applied spectroscopy, (),  (2001).
+** 1997CourtoisCJA
+Courtois, D., Parvitte, B., Ponomarev, Y. N., Tikhomirova, O. V., Tikhomirov, B. A., & Zéninari, V., Study of vibrational relaxation of 03 (001) using photoacoustic technique, Chinese Journal of Acoustics, 16(4), 372–376 (1997).
+** 2011BonnoIJT
+Bonno, B., Zéninari, V., Joly, L., & Parvitte, B., Study of a thermophysical system with two time constants using an open photoacoustic cell, International Journal of Thermophysics, 32(), 630–640 (2011).  http://dx.doi.org/10.1007/s10765-011-0918-x
+** 2017BizetAPb
+Bizet, L., Vallon, R., Parvitte, B., Brun, M., Maisons, G., Carras, M., & Zéninari, V., Multi-gas sensing with quantum cascade laser array in the mid-infrared region, Applied Physics B: Lasers \& Optics, 123(5), 145 (2017).
+
+** 2020MoriauxIPT
+Moriaux, A., Vallon, R., Cilindre, C., Polak, F., Parvitte, B., Liger-Belair, G., & Zeninari, V., A first step towards the mapping of gas-phase co2 in the headspace of champagne glasses, Infrared Physics & Technology, 109(), 103437 (2020).  http://dx.doi.org/https://doi.org/10.1016/j.infrared.2020.103437
+
+** 2020ZéninariSensors
+Z\'eninari, Virginie, Vallon, Rapha\"el, Bizet, L., Jacquemin, Cl\'ement, Aoust, G., Maisons, Gr\'egory, Carras, M., …, Widely-tunable quantum cascade-based sources for the development of optical gas sensors, Sensors, 20(22), 6650 (2020).  http://dx.doi.org/10.3390/s20226650
 
